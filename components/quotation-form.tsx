@@ -265,7 +265,7 @@ export default function QuotationForm({ initialService }: QuotationFormProps = {
                     onCheckedChange={() => handleInterestToggle("WATERPROOFING")}
                   />
                   <label htmlFor="interest-waterproofing" className="text-sm">
-                    WATERPROOFING
+                   Civil & Structural Construction
                   </label>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -275,7 +275,7 @@ export default function QuotationForm({ initialService }: QuotationFormProps = {
                     onCheckedChange={() => handleInterestToggle("RETROFITTING")}
                   />
                   <label htmlFor="interest-retrofitting" className="text-sm">
-                    RETROFITTING
+                   Internal & External Finishing
                   </label>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -285,7 +285,7 @@ export default function QuotationForm({ initialService }: QuotationFormProps = {
                     onCheckedChange={() => handleInterestToggle("INTERIOR")}
                   />
                   <label htmlFor="interest-interior" className="text-sm">
-                    INTERIOR
+                    External Development
                   </label>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -295,7 +295,37 @@ export default function QuotationForm({ initialService }: QuotationFormProps = {
                     onCheckedChange={() => handleInterestToggle("CONSTRUCTION")}
                   />
                   <label htmlFor="interest-construction" className="text-sm">
-                    CONSTRUCTION
+                    Civil Construction
+                  </label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Checkbox
+                    id="interest-construction"
+                    checked={selectedInterests.includes("CONSTRUCTION")}
+                    onCheckedChange={() => handleInterestToggle("CONSTRUCTION")}
+                  />
+                  <label htmlFor="interest-construction" className="text-sm">
+                    Interior Works
+                  </label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Checkbox
+                    id="interest-construction"
+                    checked={selectedInterests.includes("CONSTRUCTION")}
+                    onCheckedChange={() => handleInterestToggle("CONSTRUCTION")}
+                  />
+                  <label htmlFor="interest-construction" className="text-sm">
+                    Turnkey Projects
+                  </label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Checkbox
+                    id="interest-construction"
+                    checked={selectedInterests.includes("CONSTRUCTION")}
+                    onCheckedChange={() => handleInterestToggle("CONSTRUCTION")}
+                  />
+                  <label htmlFor="interest-construction" className="text-sm">
+                    Plumbing & Firefighting Works
                   </label>
                 </div>
                 <div className="flex items-center space-x-2">
