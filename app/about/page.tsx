@@ -116,7 +116,7 @@ export default function AboutPage() {
       <ChairmanMessage />
 
       {/* Company Info Section - Updated Background and Centered Text */}
-      <section className="py-16 bg-gray-50">
+{/*       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="bg-blue-100 p-8 rounded-lg shadow-lg text-center">
             <h3 className="text-2xl font-bold text-[#132d4c] mb-6 font-['Poppins']">Company Information</h3>
@@ -159,7 +159,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Achievements Section */}
       <AchievementsSection />
