@@ -13,34 +13,42 @@ const ChairmanMessage = () => {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto"
         >
-          <h2 className="text-4xl font-bold mb-6 font-['Poppins'] text-[#00aee7]">CHAIRMAN MESSAGE</h2>
+          <h2 className="text-4xl font-bold mb-6 font-['Poppins'] text-[#00aee7]">
+            CHAIRMAN MESSAGE
+          </h2>
           <div className="w-24 h-1 bg-white mb-8"></div>
 
-          <div className="space-y-6 font-['Roboto'] leading-relaxed">
+          <div className="space-y-6 font-['Roboto'] leading-relaxed text-justify">
             <p>
-              The fundamental principle guiding ATA CONSTRUCTIONS PVT LTD is Professionalism, which serves as the
-              foundation of our commitment to customers, partners, and employees. We take pride in consistently
-              upholding our promises, ensuring reliability, integrity, and excellence in every aspect of our work.
+              Dear Partners, Clients, and Well-Wishers,
+              It gives me immense pride and gratitude to witness the journey of ATA Constructions Pvt. Ltd.
+              —a vision that began over a decade ago, now standing strong as a trusted name in the construction and interior industry.
+              What started in 2012 under the banner of ACES BUILDCON was born from a simple yet powerful idea: 
+              to build with purpose, precision, and integrity. In 2018, with the evolution of our mission and the growing 
+              demands of the industry, we transformed into ATA Constructions Pvt. Ltd., a name that now symbolizes trust, commitment, and quality.
             </p>
 
             <p>
-              In today's rapidly evolving world, business development models are being reshaped, and economic and
-              innovation cycles are becoming increasingly shorter. Companies that fail to adapt to these changes face
-              significant risks that could jeopardize their long-term success. Recognizing this, we are committed to
-              staying ahead of industry trends by continuously evolving and refining our strategies.
+              At ATA, we believe construction is not just about brick and mortar—it’s about building relationships,
+              creating meaningful spaces, and transforming visions into reality. Every project we take on, whether 
+              it’s a high-rise residential complex, a school, a hotel, or a home, carries the soul of our dedication
+              and the strength of our standards. Our success is driven by a passionate team, loyal clients, and a firm
+              belief in ethical practices. We constantly strive to stay ahead with innovation, sustainable solutions,
+              and a customer-first approach.
             </p>
 
             <p>
-              As we sharpen our approach, our objective is to become one of the world's most valuable, innovative, and
-              admired companies. We aspire to be an unstoppable force in the industry, creating immense value for our
-              shareholders, stakeholders, and the broader economy. Through continuous growth, adaptation, and a
-              relentless pursuit of excellence, we are committed to shaping the future of the construction sector.
+              We are not just constructing buildings—we are crafting legacies that will stand the test of time. And as we 
+              look to the future, we remain committed to growing responsibly, contributing to nation-building, and inspiring 
+              trust with every brick we lay. Thank you for your continued support, belief, and partnership. Together, let us build
+              a better tomorrow.
             </p>
           </div>
 
           <div className="mt-8 text-right">
-            <p className="text-xl font-semibold font-['Poppins']">Hammad Jasimi</p>
-            <p className="text-[#00aee7]">Chairman, ATA CONSTRUCTIONS PVT LTD</p>
+            <p className="text-xl font-semibold font-['Poppins']">Warm regards,</p>
+            <p className="text-xl font-semibold font-['Poppins']">Mr. Mustafa Ahmad</p>
+            <p className="text-[#00aee7]">Chairman & Founder, ATA CONSTRUCTIONS PVT LTD</p>
           </div>
         </motion.div>
       </div>
