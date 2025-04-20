@@ -21,32 +21,6 @@ export default function AboutPage() {
       transition={{ duration: 0.5 }}
       className="perspective-1000"
     >
-      {/* Hero Section */}
-{/*       <motion.section
-        className="relative h-[200px] md:h-[250px]"
-        initial={{ rotateX: 10 }}
-        animate={{ rotateX: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        <div className="absolute inset-0 bg-black/60 z-10" />
-        <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/about%20us.jpg-tL4Wk0qIChf4QbOi9sgz90anze1BRT.jpeg"
-          alt="About Us"
-          fill
-          className="object-cover"
-        />
-        <div className="relative z-20 h-full flex flex-col justify-center items-center text-center text-white px-4">
-          <motion.h1
-            className="text-4xl md:text-5xl font-bold mb-4 font-['Poppins']"
-            initial={{ y: -50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-          >
-            About Us
-          </motion.h1>
-        </div>
-      </motion.section> */}
-
       {/* About Content */}
       <motion.section
         className="py-16 sm:py-20 bg-white"
@@ -100,25 +74,25 @@ export default function AboutPage() {
 
                   <ul className="list-decimal pl-6 space-y-2">
                     <li>
-                      <strong>Integrity:</strong> We uphold the highest standards of honesty and ethics. Transparency in communication and fairness in all our dealings are non-negotiable principles.
+                      <strong>Integrity:</strong> We uphold the highest standards of honesty and ethics.
                     </li>
                     <li>
-                      <strong>Quality:</strong> We never compromise on quality. From material selection to final execution, we ensure every detail meets our rigorous standards and delivers long-term value.
+                      <strong>Quality:</strong> We never compromise on quality.
                     </li>
                     <li>
-                      <strong>Innovation:</strong> We embrace change and seek innovative solutions to challenges. Our commitment to continuous improvement drives us to adopt the latest technologies and practices in construction.
+                      <strong>Innovation:</strong> We embrace change and seek innovative solutions.
                     </li>
                     <li>
-                      <strong>Customer-Centric Approach:</strong> Our clients are our partners. We listen, understand, and customize solutions that align with their vision, timeline, and budget.
+                      <strong>Customer-Centric Approach:</strong> We listen, understand, and customize solutions.
                     </li>
                     <li>
-                      <strong>Teamwork:</strong> We believe in the power of collaboration. Our diverse team works together, leveraging each member's strengths to achieve common goals and deliver exceptional results.
+                      <strong>Teamwork:</strong> Our diverse team works together.
                     </li>
                     <li>
-                      <strong>Sustainability:</strong> We are committed to environmentally responsible construction practices that reduce waste, conserve resources, and promote green development.
+                      <strong>Sustainability:</strong> We are committed to green development.
                     </li>
                     <li>
-                      <strong>Safety:</strong> We prioritize the safety of our team, clients, and communities. Strict adherence to safety protocols ensures a secure working environment across all our projects.
+                      <strong>Safety:</strong> We prioritize the safety of our team and clients.
                     </li>
                   </ul>
                 </div>
@@ -141,14 +115,14 @@ export default function AboutPage() {
       {/* Chairman Message Section */}
       <ChairmanMessage />
 
-      {/* Company Info Section */}
+      {/* Company Info Section - Updated Background and Centered Text */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="bg-white p-8 rounded-lg shadow-lg">
+          <div className="bg-blue-100 p-8 rounded-lg shadow-lg text-center">
             <h3 className="text-2xl font-bold text-[#132d4c] mb-6 font-['Poppins']">Company Information</h3>
-            <div className="w-16 h-1 bg-[#00aee7] mb-6"></div>
+            <div className="w-16 h-1 bg-[#00aee7] mb-6 mx-auto"></div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
               <div>
                 <h4 className="text-xl font-semibold text-[#132d4c] mb-4 font-['Poppins']">Address</h4>
                 <p className="text-gray-700 mb-6 font-['Roboto']">
@@ -172,7 +146,7 @@ export default function AboutPage() {
 
               <div>
                 <h4 className="text-xl font-semibold text-[#132d4c] mb-4 font-['Poppins']">Services</h4>
-                <ul className="list-disc pl-5 text-gray-700 space-y-2 font-['Roboto']">
+                <ul className="list-disc pl-5 text-gray-700 space-y-2 font-['Roboto'] text-left inline-block">
                   <li>Civil & Structural Construction</li>
                   <li>Internal & External Finishing</li>
                   <li>External Development</li>
