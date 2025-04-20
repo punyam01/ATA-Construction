@@ -22,7 +22,7 @@ export default function AboutPage() {
       className="perspective-1000"
     >
       {/* Hero Section */}
-      <motion.section
+{/*       <motion.section
         className="relative h-[200px] md:h-[250px]"
         initial={{ rotateX: 10 }}
         animate={{ rotateX: 0 }}
@@ -45,7 +45,7 @@ export default function AboutPage() {
             About Us
           </motion.h1>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* About Content */}
       <motion.section
