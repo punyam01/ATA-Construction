@@ -3,84 +3,136 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { ChevronLeft, ChevronRight } from "lucide-react"
 import { useInView } from "react-intersection-observer"
-
-const projects = [
-  {
-    id: 1,
-    title: "Modern Office Building",
-    description: "Complete construction of a 5-story office building with modern amenities and sustainable features.",
-    images: ["/images/service1.jpg", "/images/service2.jpg", "/images/service3.jpg"],
-    category: "Commercial",
-  },
-  {
-    id: 2,
-    title: "Luxury Residential Complex",
-    description: "Development of a high-end residential complex with 50 premium apartments and community facilities.",
-    images: ["/images/service4.jpg", "/images/service5.jpg", "/images/service1.jpg"],
-    category: "Residential",
-  },
-  {
-    id: 3,
-    title: "Hospital Renovation",
-    description: "Complete renovation and expansion of an existing healthcare facility to modern standards.",
-    images: ["/images/service2.jpg", "/images/service3.jpg", "/images/service4.jpg"],
-    category: "Healthcare",
-  },
-]
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const ProjectsSection = () => {
   const [currentProject, setCurrentProject] = useState(0)
   const [currentImage, setCurrentImage] = useState(0)
   const { ref, inView } = useInView({
-    threshold: 0.1,
     triggerOnce: true,
   })
 
+  const projects = [
+    {
+      id: 1,
+      title: "Construction of Civil, Internal Plaster, IPS Flooring",
+      description:
+        "Construction of Civil, Internal Plaster, IPS Flooring, Internal finishing, Door Frame & Shutter fixing, Kota Stone Fixing.",
+      images: ["/images/service1.jpg", "/images/service2.jpg"],
+      category: "Commercial",
+      client: "PARAS",
+      amount: "12,17,245 - 70,87,391",
+      year: "2012 TO 2015",
+      contactPerson: "Mr. SP Thakur (DPM), Mr. CS Azad (PM)",
+      area: "70,000 Sqft",
+    },
+    {
+      id: 2,
+      title: "Renovation and Rectification of EWS",
+      description: "Renovation and Rectification of EWS at Mahindra Chloris Faridabad",
+      images: ["/images/service3.jpg", "/images/service4.jpg"],
+      category: "Residential",
+      client: "MLDL",
+      amount: "19,00,641",
+      year: "2016",
+      contactPerson: "Mr. Raisuddin (GM)",
+      area: "24000 sqft",
+    },
+    {
+      id: 3,
+      title: "Road & Boundary wall works",
+      description:
+        "Road & Boundary wall works, Rectification of Tower J&K, House Keeping, MS work and Internal Painting work at Mahindra AURA",
+      images: ["/images/service5.jpg", "/images/service1.jpg"],
+      category: "Infrastructure",
+      client: "MLDL",
+      amount: "56,11,349",
+      year: "2017",
+      contactPerson: "Mr. Raisuddin (GM), Mr. Vijesh (PM)",
+      area: "43,000 sqft",
+    },
+    {
+      id: 4,
+      title: "Application of SKK painting system",
+      description:
+        "Application of SKK painting system at THGG site, TATA Housing Gurgaon Gateway Phase-1, village Bajhera, sec-112, Gurgaon",
+      images: ["/images/service2.jpg", "/images/service3.jpg"],
+      category: "Residential",
+      client: "JMC TATA",
+      amount: "1,09,01,000",
+      year: "2017",
+      contactPerson: "Mr. Manmohan (AGM), Mr. Jha (Senior engg)",
+      area: "1,00,000 Sqft",
+    },
+    {
+      id: 5,
+      title: "Supply, Installation & Painting of Podium Facade",
+      description: "Supply, Installation & Painting of Podium Facade of Gurgaon Gateway",
+      images: ["/images/service4.jpg", "/images/service5.jpg"],
+      category: "Commercial",
+      client: "TATA",
+      amount: "12,32,181",
+      year: "2017",
+      contactPerson: "Mr. Manmohan (AGM)",
+      area: "13 MT",
+    },
+    {
+      id: 6,
+      title: "Internal Renovation Works",
+      description: "Internal Renovation Works at Stanza Living Haus Khas, New Delhi",
+      images: ["/images/service1.jpg", "/images/service2.jpg"],
+      category: "Residential",
+      client: "INDIVIDUAL",
+      amount: "20,000,00",
+      year: "2018",
+      contactPerson: "Mr. Ravi Raj",
+      area: "2,250 Sqft",
+    },
+    {
+      id: 7,
+      title: "Execution of Civil, Structure & Internal Finishing works",
+      description: "Execution of Civil, Structure & Internal Finishing works of D-28, Sector-105 Noida",
+      images: ["/images/service3.jpg", "/images/service4.jpg"],
+      category: "Residential",
+      client: "INDIVIDUAL",
+      amount: "2,60,39,200",
+      year: "2017-2018",
+      contactPerson: "Mr. Wasif",
+      area: "11,836 sqft",
+    },
+  ]
+
   const nextProject = () => {
-    setCurrentProject((prev) => (prev === projects.length - 1 ? 0 : prev + 1))
+    setCurrentProject((prev) => (prev + 1) % projects.length)
     setCurrentImage(0)
   }
 
   const prevProject = () => {
-    setCurrentProject((prev) => (prev === 0 ? projects.length - 1 : prev - 1))
+    setCurrentProject((prev) => (prev - 1 + projects.length) % projects.length)
     setCurrentImage(0)
   }
 
   const nextImage = () => {
-    setCurrentImage((prev) => (prev === projects[currentProject].images.length - 1 ? 0 : prev + 1))
+    setCurrentImage((prev) => (prev + 1) % projects[currentProject].images.length)
   }
 
   const prevImage = () => {
-    setCurrentImage((prev) => (prev === 0 ? projects[currentProject].images.length - 1 : prev - 1))
+    setCurrentImage((prev) => (prev - 1 + projects[currentProject].images.length) % projects[currentProject].images.length)
   }
 
   return (
-    <section ref={ref} className="py-16 bg-white">
+    <section ref={ref} className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <motion.h2
-          className="text-4xl font-bold text-[#132d4c] text-center mb-4"
-          initial={{ opacity: 0, y: -20 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
-          transition={{ duration: 0.6 }}
-        >
-          OUR PROJECTS
-        </motion.h2>
-        <motion.div
-          className="w-24 h-1 bg-[#00aee7] mx-auto mb-12"
-          initial={{ opacity: 0, scaleX: 0 }}
-          animate={inView ? { opacity: 1, scaleX: 1 } : { opacity: 0, scaleX: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        ></motion.div>
+        <h2 className="text-3xl font-bold text-center text-[#132d4c] mb-8">Our Projects</h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="flex flex-col md:flex-row gap-8 items-stretch">
           {/* Project Image Carousel */}
           <motion.div
-            className="relative h-[300px] sm:h-[400px] rounded-lg overflow-hidden shadow-xl"
+            className="relative flex-1 rounded-lg overflow-hidden shadow-xl min-h-full"
             initial={{ opacity: 0, x: -30 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.6 }}
           >
             {projects[currentProject].images.map((image, index) => (
               <div
@@ -89,20 +141,16 @@ const ProjectsSection = () => {
                   index === currentImage ? "opacity-100" : "opacity-0"
                 }`}
               >
-                {image ? (
-                  <Image
-                    src={image || "/placeholder.svg"}
-                    alt={`Project ${currentProject + 1} - Image ${index + 1}`}
-                    fill
-                    className="object-cover"
-                  />
-                ) : (
-                  <div className="absolute inset-0 bg-gray-300"></div>
-                )}
+                <Image
+                  src={image || "/placeholder.svg"}
+                  alt={`${projects[currentProject].title} - Image ${index + 1}`}
+                  fill
+                  className="object-cover"
+                />
               </div>
             ))}
 
-            {/* Image Navigation */}
+            {/* Image Navigation Arrows */}
             <button
               onClick={prevImage}
               className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full z-10"
@@ -133,7 +181,7 @@ const ProjectsSection = () => {
 
           {/* Project Details */}
           <motion.div
-            className="bg-gray-50 p-8 rounded-lg shadow-lg"
+            className="bg-gray-50 p-8 rounded-lg shadow-lg flex-1 min-h-full"
             initial={{ opacity: 0, x: 30 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -142,7 +190,30 @@ const ProjectsSection = () => {
               {projects[currentProject].category}
             </div>
             <h3 className="text-2xl font-bold text-[#132d4c] mb-4">{projects[currentProject].title}</h3>
-            <p className="text-gray-700 mb-8">{projects[currentProject].description}</p>
+            <p className="text-gray-700 mb-6">{projects[currentProject].description}</p>
+
+            <div className="grid grid-cols-2 gap-4 mb-6">
+              <div>
+                <p className="text-sm font-semibold text-[#132d4c]">Client:</p>
+                <p className="text-gray-700">{projects[currentProject].client}</p>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-[#132d4c]">Amount:</p>
+                <p className="text-gray-700">{projects[currentProject].amount}</p>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-[#132d4c]">Year:</p>
+                <p className="text-gray-700">{projects[currentProject].year}</p>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-[#132d4c]">Area:</p>
+                <p className="text-gray-700">{projects[currentProject].area}</p>
+              </div>
+              <div className="col-span-2">
+                <p className="text-sm font-semibold text-[#132d4c]">Contact Person:</p>
+                <p className="text-gray-700">{projects[currentProject].contactPerson}</p>
+              </div>
+            </div>
 
             {/* Project Navigation */}
             <div className="flex justify-between">
