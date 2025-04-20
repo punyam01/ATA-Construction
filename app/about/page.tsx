@@ -10,7 +10,6 @@ import ClientsSection from "@/components/clients-section"
 import TestimonialsSection from "@/components/testimonials-section"
 
 export default function AboutPage() {
-  // Scroll to top when page loads
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -45,12 +44,6 @@ export default function AboutPage() {
           >
             About Us
           </motion.h1>
-          <motion.div
-            className="h-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.5 }}
-          ></motion.div>
         </div>
       </motion.section>
 
@@ -93,20 +86,44 @@ export default function AboutPage() {
                 </h2>
                 <div className="w-16 sm:w-20 h-1 bg-[#00aee7] mb-5 sm:mb-6"></div>
 
-                <p className="text-gray-700 mb-6 leading-relaxed font-['Roboto']">
-                  ATA CONSTRUCTIONS PVT LTD is a professionally managed company catering to the growing demand in the
-                  Delhi market for reliable construction services. The ongoing construction boom and continuous
-                  expansion of various entities have fueled the growth of both the industry and our company.
+                <p className="text-gray-700 mb-6 leading-relaxed font-['Roboto'] text-justify">
+                  At ATA Constructions Pvt. Ltd., our vision is to be recognized as a leading force in the construction and interior industry—renowned for our integrity, innovation, and commitment to excellence.
+                  We aspire to shape the future of infrastructure by delivering world-class civil, structural, and turnkey solutions that not only meet but exceed client expectations. Our goal is to consistently elevate the standards of quality, sustainability, and efficiency in every project we undertake.
+                  We envision a company where design meets durability, where every structure tells a story of craftsmanship and care, and where our clients find lasting value and trust.
                 </p>
 
-                <p className="text-gray-700 mb-6 leading-relaxed font-['Roboto']">
-                  At ATA CONSTRUCTIONS PVT LTD, we adhere to stringent quality control systems and safety policies. Our
-                  vision for growth is centered on delivering superior quality, innovation, and integrity. Within this
-                  framework, we assure all our clients sustainable, environmentally friendly, and integrated solutions,
-                  driven by our commitment to excellence and continuous development.
-                </p>
+                <div className="text-gray-700 leading-relaxed font-['Roboto'] text-justify">
+                  <p className="mb-4">
+                    <strong>Our Core Values</strong><br />
+                    At ATA Constructions Pvt. Ltd., our values are the foundation of everything we build. They guide our decisions, define our culture, and reflect our commitment to excellence.
+                  </p>
 
-                <div className="mt-auto">
+                  <ul className="list-decimal pl-6 space-y-2">
+                    <li>
+                      <strong>Integrity:</strong> We uphold the highest standards of honesty and ethics. Transparency in communication and fairness in all our dealings are non-negotiable principles.
+                    </li>
+                    <li>
+                      <strong>Quality:</strong> We never compromise on quality. From material selection to final execution, we ensure every detail meets our rigorous standards and delivers long-term value.
+                    </li>
+                    <li>
+                      <strong>Innovation:</strong> We embrace change and seek innovative solutions to challenges. Our commitment to continuous improvement drives us to adopt the latest technologies and practices in construction.
+                    </li>
+                    <li>
+                      <strong>Customer-Centric Approach:</strong> Our clients are our partners. We listen, understand, and customize solutions that align with their vision, timeline, and budget.
+                    </li>
+                    <li>
+                      <strong>Teamwork:</strong> We believe in the power of collaboration. Our diverse team works together, leveraging each member's strengths to achieve common goals and deliver exceptional results.
+                    </li>
+                    <li>
+                      <strong>Sustainability:</strong> We are committed to environmentally responsible construction practices that reduce waste, conserve resources, and promote green development.
+                    </li>
+                    <li>
+                      <strong>Safety:</strong> We prioritize the safety of our team, clients, and communities. Strict adherence to safety protocols ensures a secure working environment across all our projects.
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="mt-auto pt-6">
                   <Button
                     size="lg"
                     className="bg-[#00aee7] hover:bg-[#132d4c] text-white px-8 font-['Poppins']"
@@ -135,28 +152,17 @@ export default function AboutPage() {
               <div>
                 <h4 className="text-xl font-semibold text-[#132d4c] mb-4 font-['Poppins']">Address</h4>
                 <p className="text-gray-700 mb-6 font-['Roboto']">
-                  C-76, Ground Floor, Abul Fazal Enclave-I,
-                  <br />
-                  (Near Axis Bank ATM), Okhla, Jamia Nagar,
-                  <br />
+                  C-76, Ground Floor, Abul Fazal Enclave-I,<br />
+                  (Near Axis Bank ATM), Okhla, Jamia Nagar,<br />
                   New Delhi-110025
                 </p>
 
                 <h4 className="text-xl font-semibold text-[#132d4c] mb-4 font-['Poppins']">Contact</h4>
                 <p className="text-gray-700 font-['Roboto']">
                   Phone:{" "}
-                  <a href="tel:+918743881877" className="text-[#00aee7] hover:underline">
-                    +91 8743881877
-                  </a>
-                  ,{" "}
-                  <a href="tel:+919891561318" className="text-[#00aee7] hover:underline">
-                    +91 9891561318
-                  </a>
-                  ,{" "}
-                  <a href="tel:+917065425011" className="text-[#00aee7] hover:underline">
-                    +91 7065425011
-                  </a>
-                  <br />
+                  <a href="tel:+918743881877" className="text-[#00aee7] hover:underline">+91 8743881877</a>,{" "}
+                  <a href="tel:+919891561318" className="text-[#00aee7] hover:underline">+91 9891561318</a>,{" "}
+                  <a href="tel:+917065425011" className="text-[#00aee7] hover:underline">+91 7065425011</a><br />
                   Email:{" "}
                   <a href="mailto:constructionsata@gmail.com" className="text-[#00aee7] hover:underline">
                     constructionsata@gmail.com
