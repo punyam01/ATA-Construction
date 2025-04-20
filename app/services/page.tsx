@@ -95,7 +95,7 @@ export default function ServicesPage() {
       transition={{ duration: 0.5 }}
       className="perspective-1000"
     >
-      {/* Hero Section */}
+      {/* Hero Section
       <motion.section
         className="relative h-[200px] md:h-[250px]"
         initial={{ rotateX: 10 }}
@@ -169,7 +169,7 @@ export default function ServicesPage() {
             ))}
           </div>
         </div>
-      </motion.section>
+      </motion.section> */
 
       {/* CTA Section */}
       <motion.section
