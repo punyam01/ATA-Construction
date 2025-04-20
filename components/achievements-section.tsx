@@ -7,7 +7,7 @@ import { useEffect, useState } from "react"
 const achievements = [
   {
     id: 1,
-    number: 9,
+    number: 13,
     suffix: "+",
     title: "Years of Experience",
   },
