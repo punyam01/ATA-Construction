@@ -10,7 +10,7 @@ const testimonials = [
     id: 1,
     title: "Smooth and Hassle-free Experience",
     content:
-      "I recently had Hammad Jasimi from H&H Associates complete a waterproofing project at my home, and I am delighted with the results. Hammad was professional, knowledgeable, and completed the work efficiently. The waterproofing quality was excellent, and the entire process was smooth and hassle-free. I highly recommend Hammad and his team for any waterproofing needs.",
+      "I recently had Mustafa Ahmad from ATA Constructions Private Ltd complete a Plumbing & Firefighting Works project at my home, and I am delighted with the results. Hammad was professional, knowledgeable, and completed the work efficiently. The Plumbing & Firefighting Works quality was excellent, and the entire process was smooth and hassle-free. I highly recommend Hammad and his team for any Plumbing & Firefighting Works needs.",
     author: "Ravinder Kumar",
     company: "DS Group",
     rating: 5,
@@ -19,7 +19,7 @@ const testimonials = [
     id: 2,
     title: "Awesome Service",
     content:
-      "H&H Associates handled a retrofitting project at my property, and I couldn't be happier with the outcome. The team was highly professional, and knowledgeable, and ensured the work was completed on time and to a high standard. The improvements have greatly enhanced the safety and stability of the structure. I highly recommend H&H Associates for any retrofitting needs.",
+      "ATA Constructions Private Ltd handled a Interior Works project at my property, and I am happy with the outcome. The team was highly professional, and knowledgeable, and ensured the work was completed on time and to a high standard. The improvements have greatly enhanced the safety and stability of the structure. I highly recommend ATA Constructions Private Ltd  for any Interior Works.",
     author: "Osama",
     company: "Lumna House",
     rating: 5,
@@ -28,7 +28,7 @@ const testimonials = [
     id: 3,
     title: "Excellent Quality Work",
     content:
-      "The interior design work done by ATA Constructions exceeded my expectations. Their attention to detail and creative solutions transformed my space completely. The team was punctual, professional, and kept me informed throughout the project. I would definitely hire them again for future projects.",
+      "The Internal & External Finishing work done by ATA Constructions exceeded my expectations. Their attention to detail and creative solutions transformed my space completely. The team was punctual, professional, and kept me informed throughout the project. I would definitely hire them again for future projects.",
     author: "Priya Sharma",
     company: "Residential Client",
     rating: 5,
