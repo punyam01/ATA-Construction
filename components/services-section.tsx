@@ -41,7 +41,7 @@ const ServicesSection = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Our Services 
+            SERVICES OF THE COMPANY
           </motion.h2>
           <motion.div
             className="w-20 sm:w-24 h-1 bg-[#00aee7] mx-auto my-4 sm:my-6"
@@ -91,14 +91,18 @@ const ServicesSection = () => {
                 </h3>
                 <p className="text-gray-700 text-center mb-5 sm:mb-6">{service.description}</p>
                 <div className="mt-auto pt-4">
-                  <Link href={`/services#${service.id}`}>
-                    <Button
-                      variant="outline"
-                      className="border-[#00aee7] text-[#132d4c] hover:bg-[#00aee7] hover:text-white w-full"
-                    >
-                      Book Service
-                    </Button>
-                  </Link>
+                  <Button
+                    variant="outline"
+                    className="border-[#00aee7] text-[#132d4c] hover:bg-[#00aee7] hover:text-white w-full"
+                    onClick={() => {
+                      // Store the selected service in sessionStorage
+                      sessionStorage.setItem("selectedService", service.id)
+                      // Trigger the quotation form
+                      document.getElementById("quotation-form-trigger")?.click()
+                    }}
+                  >
+                    Book Service
+                  </Button>
                 </div>
               </div>
             </motion.div>
