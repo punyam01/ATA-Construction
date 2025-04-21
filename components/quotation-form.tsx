@@ -27,10 +27,10 @@ import { Checkbox } from "@/components/ui/checkbox"
 
 // Updated services list - only the 7 specified services
 const services = [
-  { id: "civil-construction", name: "Civil & Structural Construction" },
-  { id: "interior-exterior", name: "Internal & External Finishing" },
+  { id: "civil-structural", name: "Civil & Structural Construction" },
+  { id: "internal-external", name: "Internal & External Finishing" },
   { id: "external-development", name: "External Development" },
-  { id: "civil-works", name: "Civil Construction" },
+  { id: "civil-construction", name: "Civil Construction" },
   { id: "interior-works", name: "Interior Works" },
   { id: "turnkey-projects", name: "Turnkey Projects" },
   { id: "plumbing-firefighting", name: "Plumbing & Firefighting Works" },
@@ -73,7 +73,7 @@ export default function QuotationForm({ initialService }: QuotationFormProps = {
   // Check for selected service in sessionStorage
   useEffect(() => {
     const storedService = sessionStorage.getItem("selectedService")
-    if (storedService && formData.service === "") {
+    if (storedService) {
       setFormData((prev) => ({ ...prev, service: storedService }))
 
       // Open the dialog
@@ -260,82 +260,72 @@ export default function QuotationForm({ initialService }: QuotationFormProps = {
               <div className="grid grid-cols-2 gap-2">
                 <div className="flex items-center space-x-2">
                   <Checkbox
-                    id="interest-waterproofing"
-                    checked={selectedInterests.includes("WATERPROOFING")}
-                    onCheckedChange={() => handleInterestToggle("WATERPROOFING")}
+                    id="interest-civil-structural"
+                    checked={selectedInterests.includes("Civil & Structural Construction")}
+                    onCheckedChange={() => handleInterestToggle("Civil & Structural Construction")}
                   />
-                  <label htmlFor="interest-waterproofing" className="text-sm">
-                   Civil & Structural Construction
+                  <label htmlFor="interest-civil-structural" className="text-sm">
+                    Civil & Structural Construction
                   </label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox
-                    id="interest-retrofitting"
-                    checked={selectedInterests.includes("RETROFITTING")}
-                    onCheckedChange={() => handleInterestToggle("RETROFITTING")}
+                    id="interest-internal-external"
+                    checked={selectedInterests.includes("Internal & External Finishing")}
+                    onCheckedChange={() => handleInterestToggle("Internal & External Finishing")}
                   />
-                  <label htmlFor="interest-retrofitting" className="text-sm">
-                   Internal & External Finishing
+                  <label htmlFor="interest-internal-external" className="text-sm">
+                    Internal & External Finishing
                   </label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox
-                    id="interest-interior"
-                    checked={selectedInterests.includes("INTERIOR")}
-                    onCheckedChange={() => handleInterestToggle("INTERIOR")}
+                    id="interest-external-development"
+                    checked={selectedInterests.includes("External Development")}
+                    onCheckedChange={() => handleInterestToggle("External Development")}
                   />
-                  <label htmlFor="interest-interior" className="text-sm">
+                  <label htmlFor="interest-external-development" className="text-sm">
                     External Development
                   </label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox
-                    id="interest-construction"
-                    checked={selectedInterests.includes("CONSTRUCTION")}
-                    onCheckedChange={() => handleInterestToggle("CONSTRUCTION")}
+                    id="interest-civil-construction"
+                    checked={selectedInterests.includes("Civil Construction")}
+                    onCheckedChange={() => handleInterestToggle("Civil Construction")}
                   />
-                  <label htmlFor="interest-construction" className="text-sm">
+                  <label htmlFor="interest-civil-construction" className="text-sm">
                     Civil Construction
                   </label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox
-                    id="interest-construction"
-                    checked={selectedInterests.includes("CONSTRUCTION")}
-                    onCheckedChange={() => handleInterestToggle("CONSTRUCTION")}
+                    id="interest-interior-works"
+                    checked={selectedInterests.includes("Interior Works")}
+                    onCheckedChange={() => handleInterestToggle("Interior Works")}
                   />
-                  <label htmlFor="interest-construction" className="text-sm">
+                  <label htmlFor="interest-interior-works" className="text-sm">
                     Interior Works
                   </label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox
-                    id="interest-construction"
-                    checked={selectedInterests.includes("CONSTRUCTION")}
-                    onCheckedChange={() => handleInterestToggle("CONSTRUCTION")}
+                    id="interest-turnkey-projects"
+                    checked={selectedInterests.includes("Turnkey Projects")}
+                    onCheckedChange={() => handleInterestToggle("Turnkey Projects")}
                   />
-                  <label htmlFor="interest-construction" className="text-sm">
+                  <label htmlFor="interest-turnkey-projects" className="text-sm">
                     Turnkey Projects
                   </label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox
-                    id="interest-construction"
-                    checked={selectedInterests.includes("CONSTRUCTION")}
-                    onCheckedChange={() => handleInterestToggle("CONSTRUCTION")}
+                    id="interest-plumbing-firefighting"
+                    checked={selectedInterests.includes("Plumbing & Firefighting Works")}
+                    onCheckedChange={() => handleInterestToggle("Plumbing & Firefighting Works")}
                   />
-                  <label htmlFor="interest-construction" className="text-sm">
-                    Plumbing & Firefighting Works
-                  </label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Checkbox
-                    id="interest-others"
-                    checked={selectedInterests.includes("OTHERS")}
-                    onCheckedChange={() => handleInterestToggle("OTHERS")}
-                  />
-                  <label htmlFor="interest-others" className="text-sm">
-                    OTHERS
+                  <label htmlFor="interest-plumbing-firefighting" className="text-sm">
+                    Plumbing & Firefighting
                   </label>
                 </div>
               </div>
