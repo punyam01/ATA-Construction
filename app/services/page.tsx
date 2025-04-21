@@ -145,7 +145,7 @@ export default function ServicesPage() {
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                       >
                         <Link href="/portfolio">
-                          <Button className="bg-[#00aee7] hover:bg-[#132d4c] text-white">View Service</Button>
+                          <Button className="bg-[#00aee7] hover:bg-[#132d4c] text-white">Book Service</Button>
                         </Link>
                       </motion.div>
                     </div>
@@ -196,7 +196,7 @@ export default function ServicesPage() {
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                       >
                         <Link href="/portfolio">
-                          <Button className="bg-[#00aee7] hover:bg-[#132d4c] text-white">View Service</Button>
+                          <Button className="bg-[#00aee7] hover:bg-[#132d4c] text-white">Book Service</Button>
                         </Link>
                       </motion.div>
                     </div>
