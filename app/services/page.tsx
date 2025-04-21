@@ -2,7 +2,6 @@
 
 import { useEffect } from "react"
 import Image from "next/image"
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 
@@ -10,21 +9,21 @@ import { motion } from "framer-motion"
 const mainServices = [
   {
     id: "civil-structural",
-    title: " Civil & Structural Construction.",
+    title: "Civil & Structural Construction.",
     description:
       "We provide comprehensive civil and structural construction services for residential, commercial, and industrial projects. Our team of experienced engineers and workers ensures high-quality construction that meets all safety standards and client requirements.",
     image: "/images/service1.jpg",
   },
   {
     id: "internal-external",
-    title: " Internal & External Finishing.",
+    title: "Internal & External Finishing.",
     description:
       "Our finishing services ensure high-quality interior and exterior aesthetics for all types of buildings. We specialize in wall finishes, flooring, ceiling work, painting, and exterior cladding to enhance the appearance and durability of your property.",
     image: "/images/service2.jpg",
   },
   {
     id: "external-development",
-    title: " External Development.",
+    title: "External Development.",
     description:
       "We offer complete external development solutions including landscaping, drainage systems, and site improvements. Our services help create functional and attractive outdoor spaces that complement your building and enhance its value.",
     image: "/images/service3.jpg",
@@ -34,28 +33,28 @@ const mainServices = [
 const specializedServices = [
   {
     id: "civil-construction",
-    title: " Civil Construction",
+    title: "Civil Construction",
     description:
       "Our civil construction services cover everything from foundation work to structural framing and concrete pouring. We handle projects of all sizes with precision and attention to detail, ensuring structural integrity and longevity.",
     image: "/images/service4.jpg",
   },
   {
     id: "interior-works",
-    title: " Interior Works",
+    title: "Interior Works",
     description:
       "Our interior services include custom cabinetry, shelving, and woodwork to enhance the functionality and aesthetics of your living spaces. We create beautiful and practical interiors tailored to your specific needs and preferences.",
     image: "/images/service5.jpg",
   },
   {
     id: "turnkey-projects",
-    title: " Turnkey Projects",
+    title: "Turnkey Projects",
     description:
       "We offer end-to-end project management and execution for turnkey construction projects. From initial design to final handover, we handle all aspects of the construction process, providing a hassle-free experience for our clients.",
     image: "/images/service1.jpg",
   },
   {
     id: "plumbing-firefighting",
-    title: " Plumbing & Firefighting Works",
+    title: "Plumbing & Firefighting Works",
     description:
       "Our specialized team handles all plumbing and firefighting system installations with expertise. We ensure reliable water supply, efficient drainage, and comprehensive fire safety systems that comply with all relevant regulations and standards.",
     image: "/images/service2.jpg",
@@ -90,6 +89,15 @@ export default function ServicesPage() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
+  // Function to handle booking service
+  const handleBookService = (serviceId: string) => {
+    // Store the selected service in sessionStorage
+    sessionStorage.setItem("selectedService", serviceId)
+
+    // Trigger the quotation form
+    document.getElementById("quotation-form-trigger")?.click()
+  }
 
   return (
     <motion.div
@@ -136,7 +144,7 @@ export default function ServicesPage() {
 
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-xl font-bold text-[#132d4c] mb-3">{service.title}</h3>
-                    <p className="text-gray-700 mb-6">{service.description}</p>
+                    <p className="text-gray-700 mb-6 text-justify">{service.description}</p>
 
                     <div className="mt-auto pt-4">
                       <motion.div
@@ -144,9 +152,12 @@ export default function ServicesPage() {
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                       >
-                        <Link href="/portfolio">
-                          <Button className="bg-[#00aee7] hover:bg-[#132d4c] text-white">Book Service</Button>
-                        </Link>
+                        <Button
+                          className="bg-[#00aee7] hover:bg-[#132d4c] text-white"
+                          onClick={() => handleBookService(service.id)}
+                        >
+                          Book Service
+                        </Button>
                       </motion.div>
                     </div>
                   </div>
@@ -187,7 +198,7 @@ export default function ServicesPage() {
 
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-xl font-bold text-[#132d4c] mb-3">{service.title}</h3>
-                    <p className="text-gray-700 mb-6">{service.description}</p>
+                    <p className="text-gray-700 mb-6 text-justify">{service.description}</p>
 
                     <div className="mt-auto pt-4">
                       <motion.div
@@ -195,9 +206,12 @@ export default function ServicesPage() {
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                       >
-                        <Link href="/portfolio">
-                          <Button className="bg-[#00aee7] hover:bg-[#132d4c] text-white">Book Service</Button>
-                        </Link>
+                        <Button
+                          className="bg-[#00aee7] hover:bg-[#132d4c] text-white"
+                          onClick={() => handleBookService(service.id)}
+                        >
+                          Book Service
+                        </Button>
                       </motion.div>
                     </div>
                   </div>
