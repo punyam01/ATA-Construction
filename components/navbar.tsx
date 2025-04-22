@@ -80,7 +80,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/ata-logo.png"
+              src="/images/ata-logo1.png"
               alt="ATA CONSTRUCTIONS Logo"
               width={240}
               height={80}
