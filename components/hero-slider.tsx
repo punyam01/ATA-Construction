@@ -7,10 +7,10 @@ import { motion } from "framer-motion"
 
 const backgroundImages = [
   "/images/service1.jpg",
-  "/images/service2.jpg",
-  "/images/service3.jpg",
-  "/images/service4.jpg",
-  "/images/service5.jpg",
+  "/images/service2.png",
+  "/images/service3.png",
+  "/images/service4.png",
+  "/images/service5.png",
 ]
 
 const HeroSlider = () => {
