@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="mb-6">
               <button onClick={scrollToTop} className="cursor-pointer focus:outline-none">
                 <Image
-                  src="/images/dark-logo-1.png"
+                  src="/images/ata-logo1.png"
                   alt="ATA CONSTRUCTIONS Logo"
                   width={220}
                   height={70}
