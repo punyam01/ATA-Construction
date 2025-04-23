@@ -18,20 +18,13 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
-      }
+      setIsScrolled(window.scrollY > 10)
     }
 
     window.addEventListener("scroll", handleScroll)
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
+    return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // Close mobile menu when route changes
   useEffect(() => {
     setIsMenuOpen(false)
   }, [pathname])
@@ -130,7 +123,7 @@ const Navbar = () => {
             </Link>
             <a
               href="https://wa.me/919891561318"
-              className={`text-base lg:text-lg font-medium transition-colors text-[#132d4c] hover:text-[#00aee7]`}
+              className="text-base lg:text-lg font-medium text-[#132d4c] hover:text-[#00aee7]"
             >
               Contact
             </a>
@@ -139,18 +132,15 @@ const Navbar = () => {
             </div>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Toggle */}
           <div className="flex items-center md:hidden">
-            <div className="mr-2">
-              <QuotationForm />
-            </div>
             <button className="text-[#132d4c] p-2" onClick={toggleMenu} aria-label="Toggle menu">
               {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation Dropdown */}
         {isMenuOpen && (
           <div className="md:hidden bg-white py-4 px-4 shadow-lg">
             <nav className="flex flex-col space-y-4">
@@ -178,9 +168,14 @@ const Navbar = () => {
               >
                 Portfolio
               </Link>
-              <a href="https://wa.me/919891561318" className={`text-lg font-medium py-2 text-left text-[#132d4c]`}>
+              <a href="https://wa.me/919891561318" className="text-lg font-medium py-2 text-[#132d4c]">
                 Contact
               </a>
+
+              {/* Mobile Quotation Form */}
+              <div className="pt-4 border-t mt-4">
+                <QuotationForm />
+              </div>
             </nav>
           </div>
         )}
