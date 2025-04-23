@@ -129,45 +129,48 @@ const ProjectsSection = () => {
         <div className="flex flex-col md:flex-row gap-8 items-stretch">
           {/* Project Image Carousel */}
           <motion.div
-            className="relative flex-1 rounded-lg overflow-hidden shadow-xl min-h-full"
+            className="relative flex-1 rounded-lg overflow-hidden shadow-xl h-64 sm:h-80 md:h-auto"
             initial={{ opacity: 0, x: -30 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
             transition={{ duration: 0.6 }}
           >
-            {projects[currentProject].images.map((image, index) => (
-              <div
-                key={index}
-                className={`absolute inset-0 transition-opacity duration-500 ${
-                  index === currentImage ? "opacity-100" : "opacity-0"
-                }`}
-              >
-                <Image
-                  src={image || "/placeholder.svg"}
-                  alt={`${projects[currentProject].title} - Image ${index + 1}`}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            ))}
+            <div className="relative w-full h-full">
+              {projects[currentProject].images.map((image, index) => (
+                <div
+                  key={index}
+                  className={`absolute inset-0 transition-opacity duration-500 ${
+                    index === currentImage ? "opacity-100 z-10" : "opacity-0 z-0"
+                  }`}
+                >
+                  <Image
+                    src={image || "/placeholder.svg"}
+                    alt={`${projects[currentProject].title} - Image ${index + 1}`}
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+              ))}
+            </div>
 
             {/* Image Navigation Arrows */}
             <button
               onClick={prevImage}
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full z-10"
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full z-20"
               aria-label="Previous image"
             >
               <ChevronLeft className="h-5 w-5" />
             </button>
             <button
               onClick={nextImage}
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full z-10"
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full z-20"
               aria-label="Next image"
             >
               <ChevronRight className="h-5 w-5" />
             </button>
 
             {/* Image Indicators */}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
               {projects[currentProject].images.map((_, index) => (
                 <button
                   key={index}
@@ -181,7 +184,7 @@ const ProjectsSection = () => {
 
           {/* Project Details */}
           <motion.div
-            className="bg-gray-50 p-8 rounded-lg shadow-lg flex-1 min-h-full"
+            className="bg-gray-50 p-6 md:p-8 rounded-lg shadow-lg flex-1"
             initial={{ opacity: 0, x: 30 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -192,31 +195,31 @@ const ProjectsSection = () => {
             <h3 className="text-2xl font-bold text-[#132d4c] mb-4">{projects[currentProject].title}</h3>
             <p className="text-gray-700 mb-6">{projects[currentProject].description}</p>
 
-            <div className="grid grid-cols-2 gap-4 mb-6">
+            <div className="grid grid-cols-2 gap-4 mb-6 text-sm">
               <div>
-                <p className="text-sm font-semibold text-[#132d4c]">Client:</p>
+                <p className="font-semibold text-[#132d4c]">Client:</p>
                 <p className="text-gray-700">{projects[currentProject].client}</p>
               </div>
               <div>
-                <p className="text-sm font-semibold text-[#132d4c]">Amount:</p>
+                <p className="font-semibold text-[#132d4c]">Amount:</p>
                 <p className="text-gray-700">{projects[currentProject].amount}</p>
               </div>
               <div>
-                <p className="text-sm font-semibold text-[#132d4c]">Year:</p>
+                <p className="font-semibold text-[#132d4c]">Year:</p>
                 <p className="text-gray-700">{projects[currentProject].year}</p>
               </div>
               <div>
-                <p className="text-sm font-semibold text-[#132d4c]">Area:</p>
+                <p className="font-semibold text-[#132d4c]">Area:</p>
                 <p className="text-gray-700">{projects[currentProject].area}</p>
               </div>
               <div className="col-span-2">
-                <p className="text-sm font-semibold text-[#132d4c]">Contact Person:</p>
+                <p className="font-semibold text-[#132d4c]">Contact Person:</p>
                 <p className="text-gray-700">{projects[currentProject].contactPerson}</p>
               </div>
             </div>
 
             {/* Project Navigation */}
-            <div className="flex justify-between">
+            <div className="flex justify-between mt-4">
               <button
                 onClick={prevProject}
                 className="flex items-center text-[#132d4c] hover:text-[#00aee7] transition-colors"
