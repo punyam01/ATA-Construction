@@ -4,28 +4,27 @@ import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import Link from "next/link"
 
-// Display only 3 services on the homepage
 const homeServices = [
   {
     id: "civil-construction",
     title: "Civil & Structural Construction",
     description:
       "We provide comprehensive civil and structural construction services for residential, commercial, and industrial projects.",
-    image: "/images/service1.jpg",
+    image: "/images/serv1.jpg",
   },
   {
     id: "interior-exterior",
     title: "Internal & External Finishing",
     description:
       "Our finishing services ensure high-quality interior and exterior aesthetics for all types of buildings.",
-    image: "/images/service2.jpg",
+    image: "/images/serv2.webp",
   },
   {
     id: "external-development",
     title: "External Development",
     description:
       "We offer complete external development solutions including landscaping, drainage systems, and site improvements.",
-    image: "/images/service3.jpg",
+    image: "/images/serv3.webp",
   },
 ]
 
@@ -75,9 +74,7 @@ const ServicesSection = () => {
               whileHover={{ y: -5 }}
             >
               <div className="relative h-40 sm:h-48 overflow-hidden">
-                <div
-                  className={`absolute inset-0 ${index % 2 === 0 ? "bg-[#132d4c]/80" : "bg-[#132d4c]/70"} z-10 group-hover:opacity-70 transition-opacity`}
-                ></div>
+                {/* Removed blue overlay */}
                 {service.image ? (
                   <Image src={service.image || "/placeholder.svg"} alt={service.title} fill className="object-cover" />
                 ) : (
@@ -95,9 +92,7 @@ const ServicesSection = () => {
                     variant="outline"
                     className="border-[#00aee7] text-[#132d4c] hover:bg-[#00aee7] hover:text-white w-full"
                     onClick={() => {
-                      // Store the selected service in sessionStorage
                       sessionStorage.setItem("selectedService", service.id)
-                      // Trigger the quotation form
                       document.getElementById("quotation-form-trigger")?.click()
                     }}
                   >
