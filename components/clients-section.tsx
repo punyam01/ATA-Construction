@@ -7,13 +7,13 @@ import { useInView } from "react-intersection-observer"
 import { Pause, Play } from "lucide-react"
 
 const clients = [
-  { id: 1, name: "SAP", logo: "/images/client1.jpg" },
-  { id: 2, name: "Infosys", logo: "/images/client2.jpg" },
-  { id: 3, name: "Spotify", logo: "/images/client3.jpg" },
-  { id: 4, name: "Shopify", logo: "/images/client4.jpg" },
-  { id: 5, name: "EY", logo: "/images/client5.jpg" },
-  { id: 6, name: "Figma", logo: "/images/client6.jpg" },
-  { id: 7, name: "Duolingo", logo: "/images/client7.jpg" },
+  { id: 1, name: "TAJ", logo: "/images/client1.png" },
+  { id: 2, name: "Mahindra Lifespaces", logo: "/images/client2.png" },
+  { id: 3, name: "TATA Housing", logo: "/images/client3.png" },
+  { id: 4, name: "The Heritage", logo: "/images/client4.png" },
+  { id: 5, name: "Conscient", logo: "/images/client5.png" },
+  { id: 6, name: "PARAS", logo: "/images/client6.png" },
+  { id: 7, name: "UMANG", logo: "/images/client7.png" },
 ]
 
 const ClientsSection = () => {
@@ -64,11 +64,7 @@ const ClientsSection = () => {
           className="bg-white p-2 rounded-full shadow hover:bg-gray-100 transition"
           aria-label="Toggle Pause"
         >
-          {isPaused ? (
-            <Play className="text-[#2c6cb0] w-5 h-5" />
-          ) : (
-            <Pause className="text-[#2c6cb0] w-5 h-5" />
-          )}
+          {isPaused ? <Play className="text-[#2c6cb0] w-5 h-5" /> : <Pause className="text-[#2c6cb0] w-5 h-5" />}
         </button>
       </div>
 
@@ -100,7 +96,7 @@ const ClientsSection = () => {
             {[...clients, ...clients].map((client, index) => (
               <motion.div
                 key={`${client.id}-${index}`}
-                className="flex-shrink-0 bg-white/10 backdrop-blur-sm p-6 rounded-lg flex items-center justify-center h-24 w-40"
+                className="flex-shrink-0 bg-white/80 backdrop-blur-sm p-6 rounded-lg flex items-center justify-center h-24 w-40"
                 onMouseEnter={handleHover}
                 onMouseLeave={handleUnhover}
                 whileHover={{ y: -5, scale: 1.05 }}
@@ -108,11 +104,11 @@ const ClientsSection = () => {
               >
                 {client.logo ? (
                   <Image
-                    src={client.logo}
+                    src={client.logo || "/placeholder.svg"}
                     alt={client.name}
                     width={120}
                     height={60}
-                    className="max-h-16 w-auto object-contain filter brightness-0 invert"
+                    className="max-h-16 w-auto object-contain"
                   />
                 ) : (
                   <div className="text-white text-center">{client.name}</div>
