@@ -30,6 +30,7 @@ const services = [
   { id: "civil-structural", name: "Civil & Structural Construction" },
   { id: "internal-external", name: "Internal & External Finishing" },
   { id: "external-development", name: "External Development" },
+  { id: "Electrical Works", name: "Electrical Works" },
   { id: "civil-construction", name: "Civil Construction" },
   { id: "interior-works", name: "Interior Works" },
   { id: "turnkey-projects", name: "Turnkey Projects" },
@@ -290,12 +291,22 @@ export default function QuotationForm({ initialService }: QuotationFormProps = {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox
+                    id="interest-civil-structural"
+                    checked={selectedInterests.includes("Civil & Structural Construction")}
+                    onCheckedChange={() => handleInterestToggle("Civil & Structural Construction")}
+                  />
+                  <label htmlFor="interest-civil-structural" className="text-sm">
+                    Civil & Structural Construction
+                  </label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Checkbox
                     id="interest-civil-construction"
                     checked={selectedInterests.includes("Civil Construction")}
                     onCheckedChange={() => handleInterestToggle("Civil Construction")}
                   />
                   <label htmlFor="interest-civil-construction" className="text-sm">
-                    Civil Construction
+                    Electrical Works
                   </label>
                 </div>
                 <div className="flex items-center space-x-2">
