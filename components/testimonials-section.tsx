@@ -10,29 +10,29 @@ const testimonials = [
   [
     {
       id: 1,
-      title: "Smooth and Hassle-free Experience",
+      title: "Excellence in Execution",
       content:
-        "I recently had Mustafa Ahmad from ATA Constructions Private Ltd complete a Plumbing & Firefighting Works project at my home, and I am delighted with the results. Hammad was professional, knowledgeable, and completed the work efficiently. The Plumbing & Firefighting Works quality was excellent, and the entire process was smooth and hassle-free. I highly recommend Hammad and his team for any Plumbing & Firefighting Works needs.",
-      author: "Ravinder Kumar",
-      company: "DS Group",
+        "We are extremely pleased with the quality and efficiency demonstrated by the team during the execution of civil and structural works for Project A-11. The professionalism, adherence to safety standards, and commitment to timelines have been exceptional. The attention to engineering detail and project coordination ensured seamless progress without compromising quality.",
+      author: "Abhishek Gupta (Managing Director)",
+      company: "Eagle International India Ltd",
       rating: 5,
     },
     {
       id: 2,
-      title: "Awesome Service",
+      title: "Quality Construction & Finishing ",
       content:
-        "ATA Constructions Private Ltd handled a Interior Works project at my property, and I am happy with the outcome. The team was highly professional, and knowledgeable, and ensured the work was completed on time and to a high standard. The improvements have greatly enhanced the safety and stability of the structure. I highly recommend ATA Constructions Private Ltd  for any Interior Works.",
-      author: "Osama",
-      company: "Lumna House",
+        "The execution team showcased outstanding professionalism and technical expertise during the construction and internal finishing of the remaining 28 units of LR-1 & 2 at Paras Tiera. Despite the complexity and scale, the work was completed with strict adherence to timelines and quality benchmarks. The team’s commitment to precision, on-site coordination, and seamless project delivery truly stood out. We appreciate the dedication and look forward to future collaborations",
+      author: "Mr. S.P. Thakur",
+      company: "Paras Buildtech India Pvt. Ltd.",
       rating: 5,
     },
     {
       id: 3,
-      title: "Excellent Quality Work",
+      title: "Precision Delivered",
       content:
-        "The Internal & External Finishing work done by ATA Constructions exceeded my expectations. Their attention to detail and creative solutions transformed my space completely. The team was punctual, professional, and kept me informed throughout the project. I would definitely hire them again for future projects.",
-      author: "Priya Sharma",
-      company: "Residential Client",
+        "We are highly satisfied with the execution of internal finishing, boundary wall construction, road works, MS works, and external painting carried out at both Chloris and Aura projects. The team maintained exceptional quality standards, timely delivery, and clear communication throughout the process. Their technical proficiency and on-ground coordination reflect a deep understanding of Mahindra Lifespace’s expectations",
+      author: "Mr. Raisuddin",
+      company: "Mahindra Lifespace & Developers Ltd.",
       rating: 5,
     },
   ],
@@ -40,29 +40,29 @@ const testimonials = [
   [
     {
       id: 4,
-      title: "Professional and Reliable",
+      title: "Quality Execution",
       content:
-        "Working with ATA Constructions on our commercial renovation was a great experience. Their team was professional, reliable, and delivered exceptional quality work. The project was completed on schedule and within budget. Their expertise in commercial construction is evident in the final result.",
-      author: "Rajiv Mehta",
-      company: "Mehta Enterprises",
+        "We express our sincere appreciation for the exceptional execution of external plumbing and civil works at Taj Vivanta, Rishikesh. The team demonstrated a high level of craftsmanship, professionalism, and adherence to hospitality-grade quality standards. Their ability to manage work within challenging site conditions and strict deadlines was truly commendable. It was a pleasure working with such a dedicated and technically sound partner.",
+      author: "Mr. Ehtesham",
+      company: "Derramecks Hotels & Developers Pvt. Ltd",
       rating: 5,
     },
     {
       id: 5,
-      title: "Outstanding Craftsmanship",
+      title: "TATA Housing Project: Gurgaon Gateway, 2017",
       content:
-        "The Turnkey Projects completed by ATA Constructions was outstanding. Their attention to detail and commitment to safety standards was impressive. The team was courteous, clean, and efficient. I appreciate their transparent communication throughout the project and would definitely use their services again.",
-      author: "Aisha Khan",
-      company: "Modern Living Spaces",
+        "We would like to acknowledge the outstanding execution of the Podium Façade MS works at the Gurgaon Gateway project by Mr. Manmohan Jha. The work was carried out with precision, ensuring seamless integration with the architectural vision and adhering to all safety and quality benchmarks. Mr. Jha exhibited exemplary leadership, technical insight, and effective coordination across all stages of the project.",
+      author: "Mr. Manmohan Jha",
+      company: "TATA Housing – Gurgaon Gateway, Gurugram",
       rating: 5,
     },
     {
       id: 6,
       title: "Exceeded Expectations",
       content:
-        "ATA Constructions exceeded all my expectations with their HVAC installation. From the initial consultation to the final inspection, their team demonstrated exceptional knowledge and skill. The new system has significantly improved our energy efficiency and indoor comfort. Highly recommended!",
-      author: "Vikram Singh",
-      company: "Green Valley Resorts",
+        "We are highly satisfied with the execution of internal finishing works at the Winter Hills project in Dwarka Mor, New Delhi. The team delivered consistent quality, adhering to project timelines and maintaining close attention to detail throughout the duration of the work. Mr. Malik demonstrated commendable site coordination, technical proficiency, and an unwavering commitment to meeting design and workmanship standards.",
+      author: "Mr. Malik",
+      company: "UMANG Realtech Pvt. Ltd.",
       rating: 5,
     },
   ],
@@ -70,29 +70,29 @@ const testimonials = [
   [
     {
       id: 7,
-      title: "Timely and Cost-Effective",
+      title: "Execution Excellence",
       content:
-        "ATA Constructions completed our bathroom renovation in a timely and cost-effective manner. Their team provided excellent suggestions that helped us maximize our budget without compromising on quality. The finished bathroom looks stunning and functions perfectly. We're already planning our next project with them.",
-      author: "Meera Patel",
-      company: "Homeowner",
+        "We are pleased to acknowledge the successful execution of the internal finishing work at Heritage School, Sector 58, Gurgaon. The project demanded high attention to detail, quality, and adherence to strict timelines—requirements that were fully met by the team under the supervision of Mr. Aftab Alam. His technical proficiency, methodical planning, and consistent on-site coordination ensured the delivery of superior workmanship in alignment with the school’s architectural and functional standards",
+      author: " Mr. Aftab Alam",
+      company: "Heritage School – Sector 58, Gurgaon",
       rating: 5,
     },
     {
       id: 8,
       title: "Exceptional Project Management",
       content:
-        "The project management skills of ATA Constructions are exceptional. They coordinated multiple subcontractors seamlessly for our office renovation, ensuring minimal disruption to our operations. Their proactive communication and problem-solving abilities made the entire process stress-free.",
-      author: "Sanjay Gupta",
-      company: "Gupta Technologies",
+        "We acknowledge and appreciate the successful execution of structure and civil works for the commercial complex project at Mughal Sarai. Under the leadership of Mr. Prashant Gola, the work was completed with a strong focus on quality, engineering precision, and timely delivery. His expertise in civil construction, on-site management, and coordination with all stakeholders ensured smooth progress and adherence to project specifications.",
+      author: "Mr. Prashant Gola",
+      company: "Esotico – Commercial Complex, Mughal Sarai",
       rating: 5,
     },
     {
       id: 9,
       title: "High-Quality Structural Work",
       content:
-        "We hired ATA Constructions for some structural modifications to our heritage building. Their understanding of structural engineering and respect for the historical elements of our property was impressive. The work was completed with high precision and quality, preserving the character while improving the functionality.",
-      author: "Ananya Reddy",
-      company: "Heritage Preservation Trust",
+        "We express our appreciation for the successful execution of the meeting room interior work at VIVANTA by TAJ Hotel, Surajkund. The scope required high standards of detailing, finish quality, and coordination with hotel operations—all of which were excellently handled under the supervision of Mr. Pravin Upadhayay. His precision-driven approach, commitment to timelines, and adherence to luxury hospitality standards ensured a refined and elegant outcome",
+      author: "Mr. Pravin Upadhayay",
+      company: "VIVANTA by TAJ Hotel, Surajkund",
       rating: 5,
     },
   ],
