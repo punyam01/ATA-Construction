@@ -109,6 +109,14 @@ const Footer = () => {
                   href="/services"
                   className="text-gray-300 hover:text-[#00aee7] transition-colors flex items-center"
                 >
+                  <span className="mr-2">›</span> Electrical Works
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="text-gray-300 hover:text-[#00aee7] transition-colors flex items-center"
+                >
                   <span className="mr-2">›</span> Civil Construction
                 </Link>
               </li>
