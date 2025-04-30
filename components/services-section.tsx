@@ -40,7 +40,7 @@ const ServicesSection = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            SERVICES OF THE COMPANY
+           OUR SERVICES 
           </motion.h2>
           <motion.div
             className="w-20 sm:w-24 h-1 bg-[#00aee7] mx-auto my-4 sm:my-6"
