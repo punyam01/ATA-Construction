@@ -5,14 +5,13 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 
-// Updated services list with two distinct groups
 const mainServices = [
   {
     id: "civil-structural",
     title: "Civil & Structural Construction.",
     description:
       "We provide comprehensive civil and structural construction services for residential, commercial, and industrial projects. Our team of experienced engineers and workers ensures high-quality construction that meets all safety standards and client requirements.",
-    image: "/images/service1.jpg",
+    image: "/images/service0.jpg",
   },
   {
     id: "internal-external",
@@ -26,6 +25,13 @@ const mainServices = [
     title: "External Development.",
     description:
       "We offer complete external development solutions including landscaping, drainage systems, and site improvements. Our services help create functional and attractive outdoor spaces that complement your building and enhance its value.",
+    image: "/images/service3.jpg",
+  },
+  {
+    id: "Electrical-works",
+    title: "Electrical Works.",
+    description:
+      "Our electrical services cover everything from wiring and lighting to power distribution and safety systems. We ensure that all electrical installations are safe, efficient, and compliant with local regulations.",
     image: "/images/service3.jpg",
   },
 ]
@@ -50,7 +56,7 @@ const specializedServices = [
     title: "Turnkey Projects",
     description:
       "We offer end-to-end project management and execution for turnkey construction projects. From initial design to final handover, we handle all aspects of the construction process, providing a hassle-free experience for our clients.",
-    image: "/images/service1.jpg",
+    image: "/images/service0.jpg",
   },
   {
     id: "plumbing-firefighting",
@@ -85,17 +91,12 @@ const itemVariants = {
 }
 
 export default function ServicesPage() {
-  // Scroll to top when page loads
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
-  // Function to handle booking service
   const handleBookService = (serviceId: string) => {
-    // Store the selected service in sessionStorage
     sessionStorage.setItem("selectedService", serviceId)
-
-    // Trigger the quotation form
     document.getElementById("quotation-form-trigger")?.click()
   }
 
@@ -106,23 +107,19 @@ export default function ServicesPage() {
       transition={{ duration: 0.5 }}
       className="perspective-1000"
     >
-      {/* Hero Section */}
-      
-
-      {/* Services Content */}
+      {/* Services Section */}
       <motion.section className="py-20" variants={containerVariants} initial="hidden" animate="visible">
         <div className="container mx-auto px-4">
+          {/* Title */}
           <motion.div variants={itemVariants} className="text-center mb-16">
-            <div className="flex justify-center items-center mb-4">
-              <h2 className="text-3xl font-bold text-[#132d4c]">Our Services</h2>
-            </div>
+            <h2 className="text-3xl font-bold text-[#132d4c]">Our Services</h2>
             <div className="w-20 h-1 bg-[#00aee7] mx-auto my-4"></div>
           </motion.div>
 
-          {/* Main Services */}
+          {/* Main Services - now 4 per row */}
           <div className="bg-gray-50 py-10 px-6 rounded-lg mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {mainServices.map((service, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {mainServices.map((service) => (
                 <motion.div
                   key={service.id}
                   variants={itemVariants}
@@ -141,11 +138,9 @@ export default function ServicesPage() {
                       <div className="absolute inset-0 bg-gray-300"></div>
                     )}
                   </div>
-
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-xl font-bold text-[#132d4c] mb-3">{service.title}</h3>
                     <p className="text-gray-700 mb-6 text-justify">{service.description}</p>
-
                     <div className="mt-auto pt-4">
                       <motion.div
                         className="flex justify-center"
@@ -166,17 +161,15 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          {/* Specialized Corporate Services */}
+          {/* Specialized Services */}
           <motion.div variants={itemVariants} className="text-center mb-16">
-            <div className="flex justify-center items-center mb-4">
-              <h2 className="text-3xl font-bold text-[#132d4c]">SPECIALIZED CORPORATE SERVICES:</h2>
-            </div>
+            <h2 className="text-3xl font-bold text-[#132d4c]">SPECIALIZED CORPORATE SERVICES:</h2>
             <div className="w-20 h-1 bg-[#00aee7] mx-auto my-4"></div>
           </motion.div>
 
           <div className="bg-gray-50 py-10 px-6 rounded-lg">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {specializedServices.map((service, index) => (
+              {specializedServices.map((service) => (
                 <motion.div
                   key={service.id}
                   variants={itemVariants}
@@ -195,11 +188,9 @@ export default function ServicesPage() {
                       <div className="absolute inset-0 bg-gray-300"></div>
                     )}
                   </div>
-
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-xl font-bold text-[#132d4c] mb-3">{service.title}</h3>
                     <p className="text-gray-700 mb-6 text-justify">{service.description}</p>
-
                     <div className="mt-auto pt-4">
                       <motion.div
                         className="flex justify-center"
