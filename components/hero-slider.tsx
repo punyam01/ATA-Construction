@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 const backgroundImages = [
   "/images/service1.jpg",
-  "/images/service2.png",
+  "/images/service12.png",
   "/images/service3.png",
   "/images/service4.png",
   "/images/service5.png",
