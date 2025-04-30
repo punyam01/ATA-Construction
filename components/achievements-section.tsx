@@ -13,13 +13,13 @@ const achievements = [
   },
   {
     id: 2,
-    number: 200,
+    number: 50,
     suffix: "+",
     title: "Completed Projects",
   },
   {
     id: 3,
-    number: 200,
+    number: 50,
     suffix: "+",
     title: "Satisfied Customers",
   },
