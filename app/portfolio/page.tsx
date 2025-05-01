@@ -11,41 +11,41 @@ const portfolioItems = [
     category: "CIVIL & STRUCTURAL CONSTRUCTION",
     description:
       "We provide comprehensive civil and structural construction services for residential, commercial, and industrial projects.",
-    images: ["/images/civilcons2.png", "/images/civilcons1.jpg", "/images/civilcons3.jpg"],
+    images: ["/images/civilcons2.png", "/images/civilcons1.jpg", "/images/civilcons3.jpg", "/images/civilcons4.jpeg", "/images/civilcons5.jpeg", "/images/civilcons6.jpeg"],
   },
   {
     category: "INTERNAL & EXTERNAL FINISHING",
     description:
       "Our finishing services ensure high-quality interior and exterior aesthetics for all types of buildings.",
-    images: ["/images/interior4.jpg", "/images/interior5.JPG", "/images/interior3.jpg"],
+    images: ["/images/interior4.jpg", "/images/interior5.jpg", "/images/interior3.jpg", "/images/interior6.jpeg", "/images/inerior7.jpeg", "/images/interior8.jpeg"],
   },
   {
     category: "EXTERNAL DEVELOPMENT",
     description:
       "We offer complete external development solutions including landscaping, drainage systems, and site improvements.",
-    images: ["/images/ext1.jpg", "/images/ext4.jpg", "/images/ext2.jpg"],
+    images: ["/images/ext1.jpg", "/images/ext4.jpg", "/images/ext2.jpg", "/images/ext6.jpeg", "/images/ext5.jpeg", "/images/ext7.jpeg"],
   },
   {
     category: "CIVIL CONSTRUCTION",
     description:
       "Our civil construction services cover everything from foundation work to structural framing and concrete pouring.",
-    images: ["/images/const1.jpg", "/images/const2.jpg", "/images/const3.jpg"],
+    images: ["/images/const1.jpg", "/images/const2.jpg", "/images/const3.jpg", "/images/const4.jpeg", "/images/const5.jpeg", "/images/const6.jpeg"],
   },
   {
     category: "INTERIOR WORKS",
     description:
       "Our interior services include custom cabinetry, shelving, and woodwork to enhance the functionality and aesthetics of your living spaces.",
-    images: ["/images/interior1.jpg", "/images/interior2.jpg", "/images/interior3.jpg"],
+    images: ["/images/interior1.jpg", "/images/interior2.jpg", "/images/interior9.jpeg", "/images/interior10.jpeg", "/images/interior11.jpeg", "/images/interior12.jpeg"],],
   },
   {
     category: "TURNKEY PROJECTS",
     description: "We offer end-to-end project management and execution for turnkey construction projects.",
-    images: ["/images/tur1.jpg", "/images/tur3.jpg", "/images/tur2.jpg"],
+    images: ["/images/tur1.jpg", "/images/tur3.jpg", "/images/tur2.jpg", "/images/turn4.jpeg", "/images/turn5.jpeg", "/images/tur6.jpg"],
   },
   {
     category: "PLUMBING & FIREFIGHTING WORKS",
     description: "Our specialized team handles all plumbing and firefighting system installations with expertise.",
-    images: ["/images/plum4.jpg", "/images/plum3.JPG", "/images/plum2.jpg"],
+    images: ["/images/plum4.jpg", "/images/plum3.jpg", "/images/plum2.jpg", "/images/plum5.jpeg", "/images/plum6.jpeg", "/images/plum7.jpg"],
   },
 ]
 
