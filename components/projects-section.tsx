@@ -14,92 +14,140 @@ const ProjectsSection = () => {
   })
 
   const projects = [
+    // Completed Projects
     {
       id: 1,
-      title: "Construction of Civil, Internal Plaster, IPS Flooring",
-      description:
-        "Construction of Civil, Internal Plaster, IPS Flooring, Internal finishing, Door Frame & Shutter fixing, Kota Stone Fixing.",
+      title: "JMC INDIA LTD & TATA HOUSING - GURGAON GATEWAY",
+      description: "External Paint Project at Gurgaon Gateway, Gurugram",
       images: ["/images/service1.jpg", "/images/service2.jpg"],
-      category: "Commercial",
-      client: "PARAS",
-      amount: "12,17,245 - 70,87,391",
-      year: "2012 TO 2015",
-      contactPerson: "Mr. SP Thakur (DPM), Mr. CS Azad (PM)",
-      area: "70,000 Sqft",
+      category: "Completed",
+      client: "JMC INDIA LTD & TATA HOUSING",
+      amount: "₹3,02,20,760/-",
+      year: "2017",
+      contactPerson: "Mr. Vivek Anand Jha (+91-9910066857)",
+      contractorPerson: "Mr. Tarique (+91-9891561318)",
+      area: "Gurugram",
     },
     {
       id: 2,
-      title: "Renovation and Rectification of EWS",
-      description: "Renovation and Rectification of EWS at Mahindra Chloris Faridabad",
+      title: "EAGLE INTERNATIONAL LIMITED",
+      description: "Constructions of Structural and Civil Works at A-11, Nizamuddun West, New Delhi",
       images: ["/images/service3.jpg", "/images/service4.jpg"],
-      category: "Residential",
-      client: "MLDL",
-      amount: "19,00,641",
-      year: "2016",
-      contactPerson: "Mr. Raisuddin (GM)",
-      area: "24000 sqft",
+      category: "Completed",
+      client: "EAGLE INTERNATIONAL LIMITED",
+      amount: "₹2,89,97,905/-",
+      year: "2018",
+      contactPerson: "Mr. Abhishek Gupta (MD EAGLE INTERNATIONAL INDIA LTD)",
+      contractorPerson: "Mr. Tarique (+91-9891561318)",
+      area: "New Delhi",
     },
     {
       id: 3,
-      title: "Road & Boundary wall works",
-      description:
-        "Road & Boundary wall works, Rectification of Tower J&K, House Keeping, MS work and Internal Painting work at Mahindra AURA",
+      title: "PARAS TIERA, SEC-137, NOIDA",
+      description: "Construction of Balance Structure, civil & Internal Finishing of 28 units of LR-1&2",
       images: ["/images/service5.jpg", "/images/service1.jpg"],
-      category: "Infrastructure",
-      client: "MLDL",
-      amount: "56,11,349",
-      year: "2017",
-      contactPerson: "Mr. Raisuddin (GM), Mr. Vijesh (PM)",
-      area: "43,000 sqft",
+      category: "Completed",
+      client: "PARAS",
+      amount: "₹2,59,49,055/-",
+      year: "2012-2015",
+      contactPerson: "Mr. SP Thakur (+91-9999797547)",
+      contractorPerson: "Mr. Tarique (+91-9891561318)",
+      area: "Noida",
     },
     {
       id: 4,
-      title: "Application of SKK painting system",
-      description:
-        "Application of SKK painting system at THGG site, TATA Housing Gurgaon Gateway Phase-1, village Bajhera, sec-112, Gurgaon",
+      title: "UMANG REALTECH PVT LTD - WINTER HILLS",
+      description: "Internal Finishing Project at Winter Hills, Dwarka Mode, New Delhi",
       images: ["/images/service2.jpg", "/images/service3.jpg"],
-      category: "Residential",
-      client: "JMC TATA",
-      amount: "1,09,01,000",
-      year: "2017",
-      contactPerson: "Mr. Manmohan (AGM), Mr. Jha (Senior engg)",
-      area: "1,00,000 Sqft",
+      category: "Completed",
+      client: "UMANG REALTECH PVT LTD",
+      amount: "₹1,39,31,060/-",
+      year: "2017-2018",
+      contactPerson: "Mr. Malik (+91-9711053789)",
+      contractorPerson: "Mr. Tarique (+91-9891561318)",
+      area: "New Delhi",
     },
     {
       id: 5,
-      title: "Supply, Installation & Painting of Podium Facade",
-      description: "Supply, Installation & Painting of Podium Facade of Gurgaon Gateway",
+      title: "MAHINDRA LIFESPACE & DEVELOPERS LTD",
+      description:
+        "Internal Finishing, Boundary wall, Road Works, MS works, External Paint at Choloris-Faridabad and Aura-Gurugram",
       images: ["/images/service4.jpg", "/images/service5.jpg"],
-      category: "Commercial",
-      client: "TATA",
-      amount: "12,32,181",
+      category: "Completed",
+      client: "MAHINDRA LIFESPACE & DEVELOPERS LTD",
+      amount: "₹1,07,65,362/-",
       year: "2017",
-      contactPerson: "Mr. Manmohan (AGM)",
-      area: "13 MT",
+      contactPerson: "Mr. Raisuddin (+91-9971136382)",
+      contractorPerson: "Mr. Tarique (+91-9891561318)",
+      area: "Faridabad & Gurugram",
     },
     {
       id: 6,
-      title: "Internal Renovation Works",
-      description: "Internal Renovation Works at Stanza Living Haus Khas, New Delhi",
+      title: "INDIVIDUAL PROJECT - JAMIA NAGAR",
+      description: "Execution of Civil, Structure & Internal Finishing works of C-77, Jamia Nagar",
       images: ["/images/service1.jpg", "/images/service2.jpg"],
-      category: "Residential",
+      category: "Completed",
       client: "INDIVIDUAL",
-      amount: "20,000,00",
-      year: "2018",
-      contactPerson: "Mr. Ravi Raj",
-      area: "2,250 Sqft",
+      amount: "₹2,34,00,000/-",
+      year: "2014",
+      contactPerson: "Mr. Nadeem (+91-9891918202)",
+      contractorPerson: "Mr. Tarique (+91-9891561318)",
+      area: "Jamia Nagar",
     },
     {
       id: 7,
-      title: "Execution of Civil, Structure & Internal Finishing works",
-      description: "Execution of Civil, Structure & Internal Finishing works of D-28, Sector-105 Noida",
+      title: "HERITAGE SCHOOL",
+      description: "Internal Finishing work at Heritage school sector-62 Gurgaon",
       images: ["/images/service3.jpg", "/images/service4.jpg"],
-      category: "Residential",
+      category: "Completed",
+      client: "HERITAGE SCHOOL",
+      amount: "₹1,33,50,000/-",
+      year: "2023",
+      contactPerson: "Mr. Aftab Alam",
+      contractorPerson: "Mr. Tarique (+91-9891561318)",
+      area: "Gurgaon",
+    },
+    {
+      id: 8,
+      title: "ESOTICO",
+      description: "Structure and Civil work of Commercial Complex at Mughal Sarai",
+      images: ["/images/service5.jpg", "/images/service1.jpg"],
+      category: "Completed",
+      client: "ESOTICO",
+      amount: "₹2,13,00,000/-",
+      year: "2022",
+      contactPerson: "Mr. Prashant Gola",
+      contractorPerson: "Mr. Tarique (+91-9891561318)",
+      area: "Mughal Sarai",
+    },
+    // Ongoing Projects - First Slide
+    {
+      id: 9,
+      title: "BRIJWASI GROUP & CONSCIENT",
+      description:
+        "Structure and Civil work of Staff Quarter at Mathura Nagar & Construction of Compound wall at Heritage One sec102 Gurgaon",
+      images: ["/images/service2.jpg", "/images/service3.jpg"],
+      category: "Ongoing",
+      client: "BRIJWASI GROUP & CONSCIENT",
+      amount: "₹2,18,00,000/- & ₹45,00,000/-",
+      year: "2024",
+      contactPerson: "Mr. Shyaam Sharma & Mr. Aftab Alam",
+      contractorPerson: "Mr. Tarique (+91-9891561318)",
+      area: "Mathura & Gurgaon",
+    },
+    // Ongoing Projects - Second Slide
+    {
+      id: 10,
+      title: "INDIVIDUAL PROJECTS - NOIDA",
+      description: "Internal Finishing of N-65 Sec-131 Noida & Civil and structure work of P-118 Sec-131 Noida",
+      images: ["/images/service4.jpg", "/images/service5.jpg"],
+      category: "Ongoing",
       client: "INDIVIDUAL",
-      amount: "2,60,39,200",
-      year: "2017-2018",
-      contactPerson: "Mr. Wasif",
-      area: "11,836 sqft",
+      amount: "₹42,00,000/- & ₹32,00,000/-",
+      year: "2024",
+      contactPerson: "Individual Clients",
+      contractorPerson: "Mr. Tarique (+91-9891561318)",
+      area: "Noida",
     },
   ]
 
@@ -200,7 +248,7 @@ const ProjectsSection = () => {
                 <p className="text-gray-700">{projects[currentProject].client}</p>
               </div>
               <div>
-                <p className="text-sm font-semibold text-[#132d4c]">Amount:</p>
+                <p className="text-sm font-semibold text-[#132d4c]">Project Value:</p>
                 <p className="text-gray-700">{projects[currentProject].amount}</p>
               </div>
               <div>
@@ -208,12 +256,16 @@ const ProjectsSection = () => {
                 <p className="text-gray-700">{projects[currentProject].year}</p>
               </div>
               <div>
-                <p className="text-sm font-semibold text-[#132d4c]">Area:</p>
+                <p className="text-sm font-semibold text-[#132d4c]">Location:</p>
                 <p className="text-gray-700">{projects[currentProject].area}</p>
               </div>
               <div className="col-span-2">
-                <p className="text-sm font-semibold text-[#132d4c]">Contact Person:</p>
+                <p className="text-sm font-semibold text-[#132d4c]">Client Contact:</p>
                 <p className="text-gray-700">{projects[currentProject].contactPerson}</p>
+              </div>
+              <div className="col-span-2">
+                <p className="text-sm font-semibold text-[#132d4c]">Contractor Contact:</p>
+                <p className="text-gray-700">{projects[currentProject].contractorPerson}</p>
               </div>
             </div>
 
@@ -238,18 +290,19 @@ const ProjectsSection = () => {
         </div>
 
         {/* Project Indicators */}
-        <div className="flex justify-center mt-8 space-x-2">
-          {projects.map((_, index) => (
+        <div className="flex justify-center mt-8 space-x-2 flex-wrap">
+          {projects.map((project, index) => (
             <button
               key={index}
               onClick={() => {
                 setCurrentProject(index)
                 setCurrentImage(0)
               }}
-              className={`w-3 h-3 rounded-full ${
+              className={`w-3 h-3 rounded-full m-1 ${
                 index === currentProject ? "bg-[#00aee7]" : "bg-gray-300"
               } focus:outline-none`}
               aria-label={`Go to project ${index + 1}`}
+              title={project.title}
             />
           ))}
         </div>
