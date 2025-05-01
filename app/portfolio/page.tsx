@@ -5,10 +5,9 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
-// Portfolio categories and items based on services
 const portfolioItems = [
   {
-    category: "CIVIL & STRUCTURAL CONSTRUCTION", 
+    category: "CIVIL & STRUCTURAL CONSTRUCTION",
     description:
       "We provide comprehensive civil and structural construction services for residential, commercial, and industrial projects.",
     images: ["/images/civilcons2.png", "/images/civilcons1.jpg", "/images/civilcons3.jpg", "/images/civilcons4.jpeg", "/images/civilcons5.jpeg", "/images/civilcons6.jpeg"],
@@ -35,32 +34,28 @@ const portfolioItems = [
     category: "INTERIOR WORKS",
     description:
       "Our interior services include custom cabinetry, shelving, and woodwork to enhance the functionality and aesthetics of your living spaces.",
-    images: ["/images/interior1.jpg", "/images/interior2.jpg", "/images/interior9.jpeg", "/images/interior10.jpeg", "/images/interior11.jpeg", "/images/interior12.jpeg"],],
+    images: ["/images/interior1.jpg", "/images/interior2.jpg", "/images/interior9.jpeg", "/images/interior10.jpeg", "/images/interior11.jpeg", "/images/interior12.jpeg"],
   },
   {
     category: "TURNKEY PROJECTS",
     description: "We offer end-to-end project management and execution for turnkey construction projects.",
-    images: ["/images/tur1.jpg", "/images/tur3.jpg", "/images/tur2.jpg", "/images/turn4.jpeg", "/images/turn5.jpeg", "/images/tur6.jpg"],
+    images: ["/images/tur1.jpg", "/images/tur3.jpg", "/images/tur2.jpg", "/images/turn4.jpeg", "/images/turn5.jpeg", "/images/tur6.jpeg"],
   },
   {
     category: "PLUMBING & FIREFIGHTING WORKS",
     description: "Our specialized team handles all plumbing and firefighting system installations with expertise.",
-    images: ["/images/plum4.jpg", "/images/plum3.jpg", "/images/plum2.jpg", "/images/plum5.jpeg", "/images/plum6.jpeg", "/images/plum7.jpg"],
+    images: ["/images/plum4.jpg", "/images/plum3.jpg", "/images/plum2.jpg", "/images/plum5.jpeg", "/images/plum6.jpeg", "/images/plum7.jpeg"],
   },
 ]
 
 export default function PortfolioPage() {
-  const [currentSlides, setCurrentSlides] = useState<{ [key: string]: number }>({
-    "CIVIL & STRUCTURAL CONSTRUCTION": 0,
-    "INTERNAL & EXTERNAL FINISHING": 0,
-    "EXTERNAL DEVELOPMENT": 0,
-    "CIVIL CONSTRUCTION": 0,
-    "INTERIOR WORKS": 0,
-    "TURNKEY PROJECTS": 0,
-    "PLUMBING & FIREFIGHTING WORKS": 0,
-  })
+  const [currentSlides, setCurrentSlides] = useState<{ [key: string]: number }>(
+    portfolioItems.reduce((acc, item) => {
+      acc[item.category] = 0
+      return acc
+    }, {} as { [key: string]: number })
+  )
 
-  // Scroll to top when page loads
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -88,34 +83,6 @@ export default function PortfolioPage() {
       transition={{ duration: 0.5 }}
       className="perspective-1000"
     >
-      {/* Hero Section */}
-      {/* <motion.section
-        className="relative h-[200px] md:h-[250px]"
-        initial={{ rotateX: 10 }}
-        animate={{ rotateX: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        <div className="absolute inset-0 bg-black/60 z-10" />
-        <Image src="/images/service1.jpg" alt="Our Portfolio" fill className="object-cover" />
-        <div className="relative z-20 h-full flex flex-col justify-center items-center text-center text-white px-4">
-          <motion.h1
-            className="text-4xl md:text-5xl font-bold mb-4 font-['Poppins']"
-            initial={{ y: -50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-          >
-            Our Portfolio
-          </motion.h1>
-          <motion.div
-            className="h-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.5 }}
-          ></motion.div>
-        </div>
-      </motion.section> */}
-
-      {/* Portfolio Content */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -134,7 +101,7 @@ export default function PortfolioPage() {
 
                 <div className="relative">
                   <div className="overflow-hidden rounded-lg shadow-lg">
-                    <div className="relative h-[300px] md:h-[500px]">
+                    <div className="relative h-[200px] md:h-[350px]">
                       {item.images.map((image, index) => (
                         <div
                           key={index}
@@ -144,7 +111,7 @@ export default function PortfolioPage() {
                         >
                           {image ? (
                             <Image
-                              src={image || "/placeholder.svg"}
+                              src={image}
                               alt={`${item.category} - Image ${index + 1}`}
                               fill
                               className="object-cover"
