@@ -110,6 +110,7 @@ export default function AboutPage() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
               className="bg-gray-200 text-gray-800 p-8 rounded-xl shadow-lg h-full"
@@ -162,6 +163,7 @@ export default function AboutPage() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
               className="bg-gray-200 text-gray-800 p-8 rounded-xl shadow-lg h-full"
@@ -274,6 +276,7 @@ export default function AboutPage() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-md"
@@ -288,6 +291,7 @@ export default function AboutPage() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-md"
@@ -302,6 +306,7 @@ export default function AboutPage() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-md"
@@ -316,6 +321,7 @@ export default function AboutPage() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-md"
@@ -330,6 +336,7 @@ export default function AboutPage() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-md"
@@ -344,6 +351,7 @@ export default function AboutPage() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, delay: 0.6 }}
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-md"
@@ -358,6 +366,7 @@ export default function AboutPage() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, delay: 0.7 }}
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-md lg:col-start-2"
