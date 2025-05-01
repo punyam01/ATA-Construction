@@ -16,7 +16,7 @@ const portfolioItems = [
     category: "INTERNAL & EXTERNAL FINISHING",
     description:
       "Our finishing services ensure high-quality interior and exterior aesthetics for all types of buildings.",
-    images: ["/images/interior4.jpg", "/images/interior5.jpg", "/images/interior3.jpg", "/images/interior6.jpeg", "/images/inerior7.jpeg", "/images/interior8.jpeg"],
+    images: ["/images/interior4.jpg", "/images/interior5.JPG", "/images/interior3.jpg", "/images/interior6.jpeg", "/images/inerior7.jpeg", "/images/interior8.jpeg"],
   },
   {
     category: "EXTERNAL DEVELOPMENT",
@@ -39,7 +39,7 @@ const portfolioItems = [
   {
     category: "TURNKEY PROJECTS",
     description: "We offer end-to-end project management and execution for turnkey construction projects.",
-    images: ["/images/tur1.jpg", "/images/tur3.jpg", "/images/tur2.jpg", "/images/turn4.jpeg", "/images/turn5.jpeg", "/images/serv7.jpeg"],
+    images: ["/images/tur1.jpg", "/images/tur3.jpg", "/images/tur2.jpg", "/images/turn4.jpeg", "/images/turn5.jpeg", "/images/serv7.jpg"],
   },
   {
     category: "PLUMBING & FIREFIGHTING WORKS",
