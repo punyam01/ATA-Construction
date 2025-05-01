@@ -8,7 +8,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 // Portfolio categories and items based on services
 const portfolioItems = [
   {
-    category: "CIVIL & STRUCTURAL CONSTRUCTION",
+    category: "CIVIL & STRUCTURAL CONSTRUCTION", 
     description:
       "We provide comprehensive civil and structural construction services for residential, commercial, and industrial projects.",
     images: ["/images/civilcons2.png", "/images/civilcons1.jpg", "/images/civilcons3.jpg", "/images/civilcons4.jpeg", "/images/civilcons5.jpeg", "/images/civilcons6.jpeg"],
