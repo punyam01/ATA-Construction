@@ -9,9 +9,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const ProjectsSection = () => {
   const [currentProject, setCurrentProject] = useState(0)
   const [currentImage, setCurrentImage] = useState(0)
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-  })
+  const { ref, inView } = useInView({ triggerOnce: true })
 
   const projects = [
     {
@@ -84,7 +82,7 @@ const ProjectsSection = () => {
       id: 6,
       title: "INDIVIDUAL PROJECT - JAMIA NAGAR",
       description: "Execution of Civil, Structure & Internal Finishing works of C-77, Jamia Nagar",
-      images: ["/images/service1.jpg", "/images/service2.jpg"],
+      images: ["/images/6.1.png", "/images/6.2.png", "/images/6.3.png"],
       category: "Completed",
       client: "INDIVIDUAL",
       amount: "₹2,34,00,000/-",
@@ -110,7 +108,7 @@ const ProjectsSection = () => {
       id: 8,
       title: "ESOTICO",
       description: "Structure and Civil work of Commercial Complex at Mughal Sarai",
-      images: ["/images/8.1.png", "/images/8.2.png", "/images/8.3.png"],
+      images: ["/images/8.1.png", "/images/8.2.png","/images/8.3.png"],
       category: "Completed",
       client: "ESOTICO",
       amount: "₹2,13,00,000/-",
@@ -175,7 +173,7 @@ const ProjectsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <motion.div
-            className="relative rounded-lg overflow-hidden shadow-xl h-[300px] md:h-full bg-black"
+            className="relative rounded-lg overflow-hidden shadow-xl h-[300px] md:h-full bg-white"
             initial={{ opacity: 0, x: -30 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
             transition={{ duration: 0.6 }}
