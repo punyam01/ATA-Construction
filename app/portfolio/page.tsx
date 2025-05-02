@@ -16,7 +16,7 @@ const portfolioItems = [
     category: "INTERNAL & EXTERNAL FINISHING",
     description:
       "Our finishing services ensure high-quality interior and exterior aesthetics for all types of buildings.",
-    images: ["/images/interior4.jpg", "/images/interior5.jpg", "/images/interior3.jpg", "/images/interior6.jpeg", "/images/inerior7.jpeg", "/images/interior8.jpeg"],
+    images: ["/images/interior4.jpg", "/images/interior5.JPG", "/images/interior3.jpg", "/images/interior6.jpeg", "/images/inerior7.jpeg", "/images/interior8.jpeg"],
   },
   {
     category: "EXTERNAL DEVELOPMENT",
@@ -44,7 +44,7 @@ const portfolioItems = [
   {
     category: "PLUMBING & FIREFIGHTING WORKS",
     description: "Our specialized team handles all plumbing and firefighting system installations with expertise.",
-    images: ["/images/plum4.jpg", "/images/plum3.jpg", "/images/plum2.jpg", "/images/plum5.jpeg", "/images/plum6.jpeg", "/images/plum7.jpeg"],
+    images: ["/images/plum4.jpg", "/images/plum3.JPG", "/images/plum2.jpg", "/images/plum5.jpeg", "/images/plum6.jpeg", "/images/plum7.jpeg"],
   },
 ]
 
