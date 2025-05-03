@@ -3,6 +3,7 @@
 import { useEffect } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { Shield, Award, Lightbulb, Users, UserPlus, HardHat, Leaf } from "lucide-react"
 
 import AchievementsSection from "@/components/achievements-section"
 import ClientsSection from "@/components/clients-section"
@@ -93,11 +94,13 @@ export default function AboutPage() {
                   <p className="mb-4">
                     With a skilled team of engineers, architects, and project managers, we ensure every project is
                     executed seamlessly—from blueprint to handover. Our reputation is built on transparency, timely
-                    delivery, and long-term relationships with our clients.We aspire to shape the future of infrastructure by delivering world-class civil, structural, and
-                  turnkey solutions that not only meet but exceed client expectations. Our goal is to consistently
-                  elevate the standards of quality, sustainability, and efficiency in every project we undertake.Executing every project with excellence, combining modern design, superior materials, and skilled
-                  workmanship.Innovating continually, embracing new technologies and methods that enhance productivity, quality, and
-                  customer satisfaction.
+                    delivery, and long-term relationships with our clients.We aspire to shape the future of
+                    infrastructure by delivering world-class civil, structural, and turnkey solutions that not only meet
+                    but exceed client expectations. Our goal is to consistently elevate the standards of quality,
+                    sustainability, and efficiency in every project we undertake.Executing every project with
+                    excellence, combining modern design, superior materials, and skilled workmanship.Innovating
+                    continually, embracing new technologies and methods that enhance productivity, quality, and customer
+                    satisfaction.
                   </p>
 
                   <p>
@@ -290,7 +293,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-md"
             >
-              <h3 className="text-xl font-bold text-[#132d4c] mb-3">1. Integrity</h3>
+              <div className="flex items-center mb-4">
+                <Shield className="text-[#00aee7] mr-3 h-6 w-6" />
+                <h3 className="text-xl font-bold text-[#132d4c]">1. Integrity</h3>
+              </div>
               <p className="text-gray-700 text-justify">
                 We uphold the highest standards of honesty and ethics. Transparency in communication and fairness in all
                 our dealings are non-negotiable principles.
@@ -305,7 +311,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-md"
             >
-              <h3 className="text-xl font-bold text-[#132d4c] mb-3">2. Quality</h3>
+              <div className="flex items-center mb-4">
+                <Award className="text-[#00aee7] mr-3 h-6 w-6" />
+                <h3 className="text-xl font-bold text-[#132d4c]">2. Quality</h3>
+              </div>
               <p className="text-gray-700 text-justify">
                 We never compromise on quality. From material selection to final execution, we ensure every detail meets
                 our rigorous standards and delivers long-term value.
@@ -320,7 +329,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-md"
             >
-              <h3 className="text-xl font-bold text-[#132d4c] mb-3">3. Innovation</h3>
+              <div className="flex items-center mb-4">
+                <Lightbulb className="text-[#00aee7] mr-3 h-6 w-6" />
+                <h3 className="text-xl font-bold text-[#132d4c]">3. Innovation</h3>
+              </div>
               <p className="text-gray-700 text-justify">
                 We embrace change and continuously seek smarter, more efficient, and sustainable ways to build.
                 Innovation is at the heart of our growth and success.
@@ -335,7 +347,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-md"
             >
-              <h3 className="text-xl font-bold text-[#132d4c] mb-3">4. Customer-Centric Approach</h3>
+              <div className="flex items-center mb-4">
+                <Users className="text-[#00aee7] mr-3 h-6 w-6" />
+                <h3 className="text-xl font-bold text-[#132d4c]">4. Customer-Centric Approach</h3>
+              </div>
               <p className="text-gray-700 text-justify">
                 Our clients are our partners. We listen, understand, and customize solutions that align with their
                 vision, timeline, and budget.
@@ -350,7 +365,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-md"
             >
-              <h3 className="text-xl font-bold text-[#132d4c] mb-3">5. Teamwork</h3>
+              <div className="flex items-center mb-4">
+                <UserPlus className="text-[#00aee7] mr-3 h-6 w-6" />
+                <h3 className="text-xl font-bold text-[#132d4c]">5. Teamwork</h3>
+              </div>
               <p className="text-gray-700 text-justify">
                 We believe that collaboration brings the best outcomes. Our strength lies in our people—skilled,
                 passionate, and driven to achieve common goals.
@@ -365,7 +383,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-md"
             >
-              <h3 className="text-xl font-bold text-[#132d4c] mb-3">6. Safety</h3>
+              <div className="flex items-center mb-4">
+                <HardHat className="text-[#00aee7] mr-3 h-6 w-6" />
+                <h3 className="text-xl font-bold text-[#132d4c]">6. Safety</h3>
+              </div>
               <p className="text-gray-700 text-justify">
                 We prioritize the safety of our team, clients, and communities. Strict adherence to safety protocols
                 ensures a secure working environment across all our projects.
@@ -380,7 +401,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-md lg:col-start-2"
             >
-              <h3 className="text-xl font-bold text-[#132d4c] mb-3">7. Sustainability</h3>
+              <div className="flex items-center mb-4">
+                <Leaf className="text-[#00aee7] mr-3 h-6 w-6" />
+                <h3 className="text-xl font-bold text-[#132d4c]">7. Sustainability</h3>
+              </div>
               <p className="text-gray-700 text-justify">
                 We are committed to environmentally responsible construction practices that reduce waste, conserve
                 resources, and promote green development.
