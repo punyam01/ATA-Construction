@@ -104,14 +104,14 @@ const Footer = () => {
                   <span className="mr-2">›</span> Internal & External Finishing
                 </Link>
               </li>
-              {/* <li>
+              <li>
                 <Link
                   href="/services"
                   className="text-gray-300 hover:text-[#00aee7] transition-colors flex items-center"
                 >
                   <span className="mr-2">›</span> External Development
                 </Link>
-              </li> */}
+              </li>
               <li>
                 <Link
                   href="/services"
