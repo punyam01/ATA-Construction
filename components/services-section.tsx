@@ -14,17 +14,17 @@ const homeServices = [
   },
   {
     id: "interior-exterior",
-    title: "Internal & External Finishing",
+    title: "Internal & Finishing",
     description:
       "Our finishing services ensure high-quality interior and exterior aesthetics for all types of buildings.",
     image: "/images/serv2.webp",
   },
-  {
-    id: "Electrical-works",
-    title: "Electrical Works.",
+ {
+    id: "external-development",
+    title: "External Development",
     description:
-      "Our electrical services cover everything from wiring and lighting to power distribution and safety systems. We ensure that all electrical installations are safe, efficient, and compliant with local regulations.",
-    image: "/images/serv4.jpg",
+      "We offer complete external development solutions including landscaping, drainage systems, and site improvements.",
+    image: "/images/serv3.webp",
   },
 ]
 
