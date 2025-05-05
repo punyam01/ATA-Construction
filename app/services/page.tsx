@@ -15,18 +15,18 @@ const mainServices = [
   },
   {
     id: "internal-external",
-    title: "Internal & External Finishing.",
+    title: "Internal & Finishing.",
     description:
       "Our finishing services ensure high-quality interior and exterior aesthetics for all types of buildings. We specialize in wall finishes, flooring, ceiling work, painting, and exterior cladding to enhance the appearance and durability of your property.",
     image: "/images/serv2.webp",
   },
-  // {
-  //   id: "external-development",
-  //   title: "External Development.",
-  //   description:
-  //     "We offer complete external development solutions including landscaping, drainage systems, and site improvements. Our services help create functional and attractive outdoor spaces that complement your building and enhance its value.",
-  //   image: "/images/serv3.webp",
-  // },
+  {
+    id: "external-development",
+    title: "External Development.",
+    description:
+      "We offer complete external development solutions including landscaping, drainage systems, and site improvements. Our services help create functional and attractive outdoor spaces that complement your building and enhance its value.",
+    image: "/images/serv3.webp",
+  },
   {
     id: "Electrical-works",
     title: "Electrical Works.",
@@ -118,7 +118,7 @@ export default function ServicesPage() {
 
           {/* Main Services */}
           <div className="bg-gray-50 py-10 px-6 rounded-lg mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {mainServices.map((service) => (
                 <motion.div
                   key={service.id}
