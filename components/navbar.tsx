@@ -22,7 +22,9 @@ const Navbar = () => {
     }
 
     window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
   }, [])
 
   useEffect(() => {
@@ -35,6 +37,10 @@ const Navbar = () => {
       <div className="bg-[#132d4c] text-white py-2">
         <div className="container mx-auto px-4 flex flex-wrap justify-between items-center">
           <div className="flex items-center space-x-4 mb-2 sm:mb-0">
+            <a href="tel:+918743881877" className="flex items-center text-sm hover:text-[#00aee7] transition-colors">
+              <Phone className="h-4 w-4 mr-1" />
+              +91 8743881877
+            </a>
             <a
               href="https://wa.me/919891561318"
               className="flex items-center text-sm hover:text-[#00aee7] transition-colors"
@@ -50,14 +56,6 @@ const Navbar = () => {
               />
               +91 9891561318
             </a>
-             <a href="tel:+917065425011" className="flex items-center text-sm hover:text-[#00aee7] transition-colors">
-              <Phone className="h-4 w-4 mr-1" />
-              +91 7065425011
-            </a>
-            <a href="tel:+918743881877" className="flex items-center text-sm hover:text-[#00aee7] transition-colors">
-              <Phone className="h-4 w-4 mr-1" />
-              +91 8743881877
-            </a>
           </div>
           <a
             href="mailto:constructionsata@gmail.com"
@@ -69,6 +67,7 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Navbar Header */}
       <header
         className={`sticky top-0 z-50 w-full transition-all duration-300 ${
           isScrolled ? "bg-white shadow-md py-0" : "bg-white/95 backdrop-blur-sm py-0.5"
@@ -87,66 +86,48 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-4 lg:space-x-8">
-            <Link
-              href="/"
-              className={`text-base lg:text-lg font-medium transition-colors ${
-                pathname === "/" ? "text-[#00aee7] border-b-2 border-[#00aee7]" : "text-[#132d4c] hover:text-[#00aee7]"
-              }`}
-            >
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className={`text-base lg:text-lg font-medium transition-colors ${
-                pathname === "/about"
-                  ? "text-[#00aee7] border-b-2 border-[#00aee7]"
-                  : "text-[#132d4c] hover:text-[#00aee7]"
-              }`}
-            >
-              About Us
-            </Link>
-            <Link
-              href="/services"
-              className={`text-base lg:text-lg font-medium transition-colors ${
-                pathname === "/services"
-                  ? "text-[#00aee7] border-b-2 border-[#00aee7]"
-                  : "text-[#132d4c] hover:text-[#00aee7]"
-              }`}
-            >
-              Services
-            </Link>
-            <Link
-              href="/portfolio"
-              className={`text-base lg:text-lg font-medium transition-colors ${
-                pathname === "/portfolio"
-                  ? "text-[#00aee7] border-b-2 border-[#00aee7]"
-                  : "text-[#132d4c] hover:text-[#00aee7]"
-              }`}
-            >
-              Portfolio
-            </Link>
+            {[
+              { label: "Home", href: "/" },
+              { label: "About Us", href: "/about" },
+              { label: "Services", href: "/services" },
+              { label: "Projects", href: "/projects" },
+              { label: "Portfolio", href: "/portfolio" },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`text-base lg:text-lg font-medium transition-colors ${
+                  pathname === item.href
+                    ? "text-[#00aee7] border-b-2 border-[#00aee7]"
+                    : "text-[#132d4c] hover:text-[#00aee7]"
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
             <a
               href="https://wa.me/919891561318"
-              className="text-base lg:text-lg font-medium text-[#132d4c] hover:text-[#00aee7]"
+              className="text-base lg:text-lg font-medium text-[#132d4c] hover:text-[#00aee7] transition-colors"
             >
               Contact
             </a>
-            <div className="hidden lg:block">
+            {/* QuotationForm shown on md+ screens */}
+            <div className="ml-4">
               <QuotationForm />
             </div>
           </nav>
 
-          {/* Mobile Menu Toggle */}
-          <div className="flex items-center md:hidden">
+          {/* Mobile Menu Button */}
+          <div className="md:hidden flex items-center">
             <button className="text-[#132d4c] p-2" onClick={toggleMenu} aria-label="Toggle menu">
               {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Navigation Dropdown */}
+        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white py-4 px-4 shadow-lg">
+          <div className="md:hidden bg-white py-4 px-4 shadow-lg space-y-4">
             <nav className="flex flex-col space-y-4">
               <Link
                 href="/"
@@ -167,20 +148,29 @@ const Navbar = () => {
                 Services
               </Link>
               <Link
+                href="/projects"
+                className={`text-lg font-medium py-2 ${pathname === "/projects" ? "text-[#00aee7]" : "text-[#132d4c]"}`}
+              >
+                Projects
+              </Link>
+              <Link
                 href="/portfolio"
                 className={`text-lg font-medium py-2 ${pathname === "/portfolio" ? "text-[#00aee7]" : "text-[#132d4c]"}`}
               >
                 Portfolio
               </Link>
-              <a href="https://wa.me/919891561318" className="text-lg font-medium py-2 text-[#132d4c]">
+              <a
+                href="https://wa.me/919891561318"
+                className="text-lg font-medium py-2 text-left text-[#132d4c]"
+              >
                 Contact
               </a>
-
-              {/* Mobile Quotation Form */}
-              <div className="pt-4 border-t mt-4">
-                <QuotationForm />
-              </div>
             </nav>
+
+            {/* Show QuotationForm inside mobile menu */}
+            <div className="pt-4">
+              <QuotationForm />
+            </div>
           </div>
         )}
       </header>
