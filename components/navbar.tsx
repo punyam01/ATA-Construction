@@ -37,10 +37,6 @@ const Navbar = () => {
       <div className="bg-[#132d4c] text-white py-2">
         <div className="container mx-auto px-4 flex flex-wrap justify-between items-center">
           <div className="flex items-center space-x-4 mb-2 sm:mb-0">
-            <a href="tel:+918743881877" className="flex items-center text-sm hover:text-[#00aee7] transition-colors">
-              <Phone className="h-4 w-4 mr-1" />
-              +91 8743881877
-            </a>
             <a
               href="https://wa.me/919891561318"
               className="flex items-center text-sm hover:text-[#00aee7] transition-colors"
@@ -56,6 +52,15 @@ const Navbar = () => {
               />
               +91 9891561318
             </a>
+            <a href="tel:+918743881877" className="flex items-center text-sm hover:text-[#00aee7] transition-colors">
+              <Phone className="h-4 w-4 mr-1" />
+              +91 7065425011
+            </a>
+           <a href="tel:+918743881877" className="flex items-center text-sm hover:text-[#00aee7] transition-colors">
+              <Phone className="h-4 w-4 mr-1" />
+              +91 8743881877
+            </a>
+
           </div>
           <a
             href="mailto:constructionsata@gmail.com"
