@@ -14,7 +14,7 @@ const homeServices = [
   },
   {
     id: "interior-exterior",
-    title: "Internal & Finishing",
+    title: "Internal Finishing",
     description:
       "Our finishing services ensure high-quality interior and exterior aesthetics for all types of buildings.",
     image: "/images/serv2.webp",
