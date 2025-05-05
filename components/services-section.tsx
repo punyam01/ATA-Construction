@@ -20,11 +20,11 @@ const homeServices = [
     image: "/images/serv2.webp",
   },
   {
-    id: "external-development",
-    title: "External Development",
+    id: "Electrical-works",
+    title: "Electrical Works.",
     description:
-      "We offer complete external development solutions including landscaping, drainage systems, and site improvements.",
-    image: "/images/serv3.webp",
+      "Our electrical services cover everything from wiring and lighting to power distribution and safety systems. We ensure that all electrical installations are safe, efficient, and compliant with local regulations.",
+    image: "/images/serv4.jpg",
   },
 ]
 
