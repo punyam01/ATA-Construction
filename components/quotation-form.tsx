@@ -28,8 +28,8 @@ import { Checkbox } from "@/components/ui/checkbox"
 // Updated services list - only the 7 specified services
 const services = [
   { id: "civil-structural", name: "Civil & Structural Construction" },
-  { id: "internal-external", name: "Internal & External Finishing" },
-  // { id: "external-development", name: "External Development" },
+  { id: "internal-external", name: "Internal Finishing" },
+  { id: "external-development", name: "External Development" },
   { id: "Electrical Works", name: "Electrical Works" },
   { id: "civil-construction", name: "Civil Construction" },
   { id: "interior-works", name: "Interior Works" },
@@ -276,10 +276,10 @@ export default function QuotationForm({ initialService }: QuotationFormProps = {
                     onCheckedChange={() => handleInterestToggle("Internal & External Finishing")}
                   />
                   <label htmlFor="interest-internal-external" className="text-sm">
-                    Internal & External Finishing
+                    Internal Finishing
                   </label>
                 </div>
-{/*                 <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2">
                   <Checkbox
                     id="interest-external-development"
                     checked={selectedInterests.includes("External Development")}
@@ -288,7 +288,7 @@ export default function QuotationForm({ initialService }: QuotationFormProps = {
                   <label htmlFor="interest-external-development" className="text-sm">
                     External Development
                   </label>
-                </div> */}
+                </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox
                     id="interest-civil-structural"
