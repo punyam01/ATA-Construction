@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Company Info */}
           <div>
-            <div className="mb-6">
+            <div className="mb-6 ">
               <button onClick={scrollToTop} className="cursor-pointer focus:outline-none">
                 <Image
                   src="/images/ata-logo1.png"
@@ -55,6 +55,14 @@ const Footer = () => {
                   className="text-gray-300 hover:text-[#00aee7] transition-colors flex items-center"
                 >
                   <span className="mr-2">›</span> Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/projects"
+                  className="text-gray-300 hover:text-[#00aee7] transition-colors flex items-center"
+                >
+                  <span className="mr-2">›</span> Projects
                 </Link>
               </li>
               <li>
@@ -96,14 +104,14 @@ const Footer = () => {
                   <span className="mr-2">›</span> Internal & External Finishing
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/services"
                   className="text-gray-300 hover:text-[#00aee7] transition-colors flex items-center"
                 >
                   <span className="mr-2">›</span> External Development
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="/services"
@@ -158,11 +166,11 @@ const Footer = () => {
                     +91 9891561318
                   </a>
                   <br />
-                   <a href="tel:+917065425011" className="hover:text-[#00aee7] transition-colors">
+                  <a href="tel:+917065425011" className="hover:text-[#00aee7] transition-colors">
                     +91 7065425011
                   </a>
                    <br />
-                   <a href="tel:+918743881877" className="hover:text-[#00aee7] transition-colors">
+                  <a href="tel:+918743881877" className="hover:text-[#00aee7] transition-colors">
                     +91 8743881877
                   </a>
                 </div>
