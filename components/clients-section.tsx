@@ -10,10 +10,11 @@ const clients = [
   { id: 1, name: "TAJ", logo: "/images/client1.png" },
   { id: 2, name: "Mahindra Lifespaces", logo: "/images/client2.png" },
   { id: 3, name: "TATA Housing", logo: "/images/client3.png" },
-  { id: 4, name: "The Heritage", logo: "/images/client4.png" },
+  { id: 4, name: "The Heritage", logo: "/images/client14.jpeg" },
   { id: 5, name: "Conscient", logo: "/images/client5.png" },
-  { id: 6, name: "PARAS", logo: "/images/client6.png" },
+  { id: 6, name: "PARAS", logo: "/images/client16.jpeg" },
   { id: 7, name: "UMANG", logo: "/images/client7.png" },
+   { id: 8, name: "BRIJWASI", logo: "/images/client8.png" },
 ]
 
 const ClientsSection = () => {
