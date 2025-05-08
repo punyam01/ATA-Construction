@@ -77,7 +77,7 @@ export default function AboutPage() {
                   <h3 className="text-xl font-semibold text-[#132d4c] mb-3">Core Services</h3>
                   <ul className="list-disc pl-6 space-y-1 mb-4">
                     <li>Civil & Structural Construction</li>
-                    <li>Internal and External Finishing</li>
+                    <li>Internal Finishing</li>
                     <li>External Site Development</li>
                     <li>Electrical Works</li>
                   </ul>
