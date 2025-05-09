@@ -2,6 +2,7 @@
 import HeroSlider from "@/components/hero-slider"
 
 import ServicesSection from "@/components/services-section"
+import ProjectGallery from "@/components/project-gallery"
 import WhyChooseUsSection from "@/components/why-choose-us-section"
 import AchievementsSection from "@/components/achievements-section"
 // import ProjectsSection from "@/components/projects-section"
@@ -15,6 +16,7 @@ export default function Home() {
     <>
       <HeroSlider />
       <ServicesSection />
+      <ProjectGallery />
       <WhyChooseUsSection />
       <AchievementsSection />
 {/*       <ProjectsSection /> */}
