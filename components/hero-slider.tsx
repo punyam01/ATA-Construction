@@ -8,8 +8,8 @@ import { motion } from "framer-motion"
 const backgroundImages = [
   "/images/front_02.jpg",
   "/images/service12.png",
-  "/images/service3.png",
-  "/images/service4.png",
+  "/images/service1.jpg",
+  "/images/service5.png",
   "/images/Front_01.png",
 ]
 
