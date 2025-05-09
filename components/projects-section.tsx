@@ -30,7 +30,7 @@ const ProjectsSection = () => {
       title: "MAHINDRA LIFESPACE & DEVELOPERS LTD",
       description:
         "Internal Finishing, Boundary wall, Road Works, MS works, External Development at Choloris-Faridabad and Aura-Gurugram",
-      images: ["/images/Mahindra_01.png", "/images/Mahindra_02.png", "/images/5.3.png"],
+      images: ["/images/Mahindra_01.png", "/images/mahindra_02.png", "/images/5.3.png"],
       category: "External Development",
       client: "MAHINDRA LIFESPACE & DEVELOPERS LTD",
       amount: "₹1,07,65,363/-",
