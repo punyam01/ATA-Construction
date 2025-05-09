@@ -29,7 +29,7 @@ const ProjectsSection = () => {
       id: 2,
       title: "MAHINDRA LIFESPACE & DEVELOPERS LTD",
       description:
-        "Internal Finishing, Boundary wall, Road Works, MS works, External Development at Choloris-Faridabad and Aura-Gurugram",
+        "Internal Finishing, Boundary wall, Road Works, MS works, External Development at Chloris-Faridabad and Aura-Gurugram",
       images: ["/images/Mahindra_01.png", "/images/mahindra_02.png", "/images/5.3.png"],
       category: "External Development",
       client: "MAHINDRA LIFESPACE & DEVELOPERS LTD",
@@ -81,7 +81,7 @@ const ProjectsSection = () => {
     {
       id: 6,
       title: "UMANG REALTECH PVT LTD - WINTER HILLS",
-      description: "Interior Finishing Project at Winter Hills, Dwarka Mode",
+      description: "Interior Finishing Project at Winter Hills, Dwarka Morh",
       images: ["/images/4.1.png", "/images/Umang_02.png", "/images/Umang_04.png"],
       category: "Interior",
       client: "UMANG REALTECH PVT LTD",
@@ -94,7 +94,7 @@ const ProjectsSection = () => {
     {
       id: 7,
       title: "EAGLE INTERNATIONAL LIMITED",
-      description: "Constructions of Structure, Civil & Interior Works at A-11, Nizamuddun West",
+      description: "Constructions of Structure, Civil & Interior Works at A-11, Nizamuddin West",
       images: ["/images/2.1.jpg", "/images/2.2.png", "/images/2.3.jpg"],
       category: "Structure, Civil, Interior",
       client: "EAGLE INTERNATIONAL LIMITED",
