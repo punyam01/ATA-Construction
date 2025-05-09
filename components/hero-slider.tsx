@@ -9,7 +9,7 @@ const backgroundImages = [
   "/images/front_02.jpg",
   "/images/service12.png",
   "/images/service1.jpg",
-  "/images/service5.png",
+  "/images/Front Slide_02.png",
   "/images/Front_01.png",
 ]
 
