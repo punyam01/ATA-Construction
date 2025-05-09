@@ -42,12 +42,8 @@ const ProjectGallery = () => {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
           transition={{ duration: 0.6 }}
         >
-           PROJECT GALLERY
+          PROJECT GALLERY
         </motion.h2>
-
-        {/* <p className="text-center text-gray-600 mb-8">
-          Hover on an image to view it fullscreen
-        </p> */}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0">
           {projectImages.map((image, index) => (
@@ -57,11 +53,10 @@ const ProjectGallery = () => {
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 0.5, delay: index * 0.03 }}
-              onMouseEnter={() => setHoveredImage(index)}
-              onMouseLeave={() => setHoveredImage(null)}
+              onClick={() => setHoveredImage(index)}
             >
               <Image
-                src={image || "/placeholder.svg"}
+                src={image}
                 alt={`Project ${index + 1}`}
                 fill
                 className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
@@ -70,27 +65,26 @@ const ProjectGallery = () => {
           ))}
         </div>
 
-        {/* Fullscreen image on hover */}
+        {/* Fullscreen image modal */}
         <AnimatePresence>
           {hoveredImage !== null && (
             <motion.div
-              key="hover-image"
+              key="fullscreen-image"
               className="fixed inset-0 bg-black bg-opacity-95 z-50 flex items-center justify-center"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              onMouseLeave={() => setHoveredImage(null)} // Optional: close on mouse leave fullscreen
             >
               <motion.div
                 className="relative w-screen h-screen"
-                initial={{ scale: 0.8, opacity: 0 }}
+                initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-                exit={{ scale: 0.8, opacity: 0 }}
+                exit={{ scale: 0.9, opacity: 0 }}
                 transition={{ duration: 0.4 }}
               >
                 <Image
-                  src={projectImages[hoveredImage] || "/placeholder.svg"}
+                  src={projectImages[hoveredImage]}
                   alt={`Project ${hoveredImage + 1}`}
                   priority
                   fill
@@ -100,19 +94,7 @@ const ProjectGallery = () => {
                 <button
                   onClick={() => setHoveredImage(null)}
                   aria-label="Close fullscreen image"
-                  className="
-                    absolute top-4 right-4 
-                    bg-transparent 
-                    text-white 
-                    p-2 
-                    cursor-pointer 
-                    hover:text-gray-300 
-                    outline-none 
-                    focus:outline-none 
-                    border-none
-                    z-50
-                  "
-                  style={{ userSelect: "none" }}
+                  className="absolute top-4 right-4 text-white p-2 hover:text-gray-300 z-50"
                 >
                   <X size={32} />
                 </button>
