@@ -6,11 +6,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { motion } from "framer-motion"
 
 const backgroundImages = [
-  "/images/service1.jpg",
+  "/images/front_02.jpg",
   "/images/service12.png",
   "/images/service3.png",
   "/images/service4.png",
-  "/images/service5.png",
+  "/images/front_01.png",
 ]
 
 const HeroSlider = () => {
@@ -70,7 +70,7 @@ const HeroSlider = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-serif">to</h2>
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold font-serif">ATA CONSTRUCTIONS PVT LTD</h3>
             <p className="text-xl sm:text-2xl md:text-3xl font-semibold font-serif mt-2">
-               " Reliable. Resilient. Remarkable."
+              " Reliable. Resilient. Remarkable."
             </p>
           </motion.div>
         </div>
