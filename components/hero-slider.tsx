@@ -10,7 +10,7 @@ const backgroundImages = [
   "/images/service12.png",
   "/images/service3.png",
   "/images/service4.png",
-  "/images/front_01.png",
+  "/images/Front_01.png",
 ]
 
 const HeroSlider = () => {
