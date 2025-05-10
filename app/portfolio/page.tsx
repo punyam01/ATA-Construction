@@ -85,11 +85,11 @@ export default function PortfolioPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#132d4c] mb-4 font-['Poppins']">Our Work</h2>
+{/*             <h2 className="text-3xl font-bold text-[#132d4c] mb-4 font-['Poppins']">Our Work</h2>
             <div className="w-24 h-1 bg-[#00aee7] mx-auto mb-6"></div>
             <p className="text-gray-700 max-w-3xl mx-auto font-['Roboto']">
               Explore our portfolio showcasing our expertise across various construction and renovation projects.
-            </p>
+            </p> */}
           </div>
 
           <div className="space-y-20">
