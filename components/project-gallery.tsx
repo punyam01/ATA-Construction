@@ -11,7 +11,7 @@ const projectImages = [
   "/images/Paras_02.png",
   "/images/Paras_03.png",
   "/images/Mahindra_01.png",
-  "/images/mahindra_02.png",
+  "/images/Mahindra_02.png",
   "/images/Tata_01.png",
   "/images/Tata_02.png",
   "/images/Taj Resort_02.png",
@@ -46,7 +46,7 @@ const ProjectGallery = () => {
   }
 
   return (
-    <section ref={ref} className="py-12 bg-gray-50">
+    <section ref={ref} className="pt-0 pb-2 mt-0 sm:mt-0 bg-gray-50">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-3xl font-bold text-center text-[#132d4c] mb-6"
