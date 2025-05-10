@@ -56,8 +56,8 @@ const ServicesSection = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            We offer a wide range of construction and development services to meet all your needs. Our expert team
-            ensures high-quality service delivery for both residential and commercial projects.
+{/*             We offer a wide range of construction and development services to meet all your needs. Our expert team
+            ensures high-quality service delivery for both residential and commercial projects. */}
           </motion.p>
         </div>
 
