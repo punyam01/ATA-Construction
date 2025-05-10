@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { useInView } from "react-intersection-observer"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, Calendar, MapPin, Building, DollarSign } from "lucide-react"
 
 const ProjectsSection = () => {
   const [currentProject, setCurrentProject] = useState(0)
@@ -16,7 +16,13 @@ const ProjectsSection = () => {
       id: 1,
       title: "PARAS BUILDTECH - TIERA, SEC-137",
       description: "Construction of Balance Structure, civil & Internal Finishing of 28 units of LR-1&2",
-      images: ["/images/Paras_01.png", "/images/Paras_02.png", "/images/Paras_03.png"],
+      images: [
+        "/images/Paras_01.png",
+        "/images/Paras_02.png",
+        "/images/Paras_03.png",
+        "/images/3.1.png",
+        "/images/3.2.png",
+      ],
       category: "Civil and Interior",
       client: "PARAS BUILDTECH",
       amount: "₹2,59,49,595/-",
@@ -29,8 +35,14 @@ const ProjectsSection = () => {
       id: 2,
       title: "MAHINDRA LIFESPACE & DEVELOPERS LTD",
       description:
-        "Internal Finishing, Boundary wall, Road Works, MS works, External Development at Chloris-Faridabad and Aura-Gurugram",
-      images: ["/images/Mahindra_01.png", "/images/mahindra_02.png", "/images/5.3.png"],
+        "Internal Finishing, Boundary wall, Road Works, MS works, External Development at Choloris-Faridabad and Aura-Gurugram",
+      images: [
+        "/images/Mahindra_01.png",
+        "/images/Mahindra_02.png",
+        "/images/5.3.png",
+        "/images/5.2.png",
+        "/images/5.1.png",
+      ],
       category: "External Development",
       client: "MAHINDRA LIFESPACE & DEVELOPERS LTD",
       amount: "₹1,07,65,363/-",
@@ -43,7 +55,7 @@ const ProjectsSection = () => {
       id: 3,
       title: "TATA HOUSING - GURGAON GATEWAY",
       description: "External Paint SKK Project at Gurgaon Gateway",
-      images: ["/images/1.3.jpg", "/images/Tata_01.png", "/images/Tata_02.png"],
+      images: ["/images/1.3.jpg", "/images/Tata_01.png", "/images/Tata_02.png", "/images/1.1.bmp", "/images/1.2.bmp"],
       category: "External Paint SKK",
       client: "TATA HOUSING",
       amount: "₹1,21,33,181/-",
@@ -56,7 +68,13 @@ const ProjectsSection = () => {
       id: 4,
       title: "TAJ RESORT RISHIKESH",
       description: "External Development Project at Taj Resort",
-      images: ["/images/Taj Resort_02.png", "/images/Taj Resort_01.png", "/images/Taj Resort_05.png"],
+      images: [
+        "/images/Taj Resort_02.png",
+        "/images/Taj Resort_01.png",
+        "/images/Taj Resort_05.png",
+        "/images/Taj Resort _04.png",
+        "/images/Taj Resort_03.png",
+      ],
       category: "External Development",
       client: "TAJ RESORT",
       amount: "₹1,19,54,129/-",
@@ -69,7 +87,13 @@ const ProjectsSection = () => {
       id: 5,
       title: "HERITAGE INTERNATIONAL SCHOOL",
       description: "Interior Finishing work at Heritage International school",
-      images: ["/images/School_01.png", "/images/School_02.png", "/images/School_03.png"],
+      images: [
+        "/images/School_01.png",
+        "/images/School_02.png",
+        "/images/School_03.png",
+        "/images/7.1.png",
+        "/images/7.2.png",
+      ],
       category: "Interior",
       client: "HERITAGE INTERNATIONAL SCHOOL",
       amount: "₹1,47,98,030/-",
@@ -81,8 +105,8 @@ const ProjectsSection = () => {
     {
       id: 6,
       title: "UMANG REALTECH PVT LTD - WINTER HILLS",
-      description: "Interior Finishing Project at Winter Hills, Dwarka Morh",
-      images: ["/images/4.1.png", "/images/Umang_02.png", "/images/Umang_04.png"],
+      description: "Interior Finishing Project at Winter Hills, Dwarka Mode",
+      images: ["/images/4.1.png", "/images/Umang_02.png", "/images/Umang_04.png", "/images/4.2.png", "/images/4.3.png"],
       category: "Interior",
       client: "UMANG REALTECH PVT LTD",
       amount: "₹1,39,31,060/-",
@@ -94,7 +118,7 @@ const ProjectsSection = () => {
     {
       id: 7,
       title: "EAGLE INTERNATIONAL LIMITED",
-      description: "Constructions of Structure, Civil & Interior Works at A-11, Nizamuddin West",
+      description: "Constructions of Structure, Civil & Interior Works at A-11, Nizamuddun West",
       images: ["/images/2.1.jpg", "/images/2.2.png", "/images/2.3.jpg"],
       category: "Structure, Civil, Interior",
       client: "EAGLE INTERNATIONAL LIMITED",
@@ -121,7 +145,13 @@ const ProjectsSection = () => {
       id: 9,
       title: "TAJ VIVANTA SURAJKUND",
       description: "Interior, Fire Fighting and Electrical Works",
-      images: ["/images/TAJ VIVANTA_01.png", "/images/TAJ VIVANTA_02.png", "/images/TAJ VIVANTA_05.png"],
+      images: [
+        "/images/TAJ VIVANTA_01.png",
+        "/images/TAJ VIVANTA_02.png",
+        "/images/TAJ VIVANTA_05.png",
+        "/images/TAJ VIVANTA_03.png",
+        "/images/TAJ VIVANTA_04.png",
+      ],
       category: "Interior, Fire Fighting, Electrical",
       client: "TAJ VIVANTA",
       amount: "₹65,28,450/-",
@@ -173,7 +203,13 @@ const ProjectsSection = () => {
       id: 13,
       title: "LEARNING MATTERS SCHOOL",
       description: "Interior, Electrical, Plumbing and External Development Works",
-      images: ["/images/LEARNING SCHOOL MATTER_04.png", "/images/LEARNING SCHOOL MATTER_02.png", "/images/LEARNING SCHOOL MATTER_03.png"],
+      images: [
+        "/images/LEARNING SCHOOL MATTER_04.png",
+        "/images/LEARNING SCHOOL MATTER_02.png",
+        "/images/LEARNING SCHOOL MATTER_03.png",
+        "/images/LEARNING SCHOOL MATTER_01.png",
+        "/images/LEARNING SCHOOL MATTER_05.png",
+      ],
       category: "Interior, Electrical, Plumbing, External Development",
       client: "LEARNING MATTERS SCHOOL",
       amount: "₹46,58,690/-",
@@ -250,154 +286,187 @@ const ProjectsSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextImage()
-    }, 2000)
+    }, 3000)
     return () => clearInterval(interval)
-  }, [currentProject])
+  }, [currentProject, currentImage])
 
   if (!project) return null
 
   return (
-    <section ref={ref} className="py-20 bg-white">
+    <section ref={ref} className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row gap-0 items-stretch">
-          {/* Left Image Carousel */}
-          <motion.div
-            className="relative w-full md:w-1/2 rounded-l-lg overflow-hidden shadow-xl min-h-[500px] bg-white"
-            initial={{ opacity: 0, x: -30 }}
-            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
-            transition={{ duration: 0.6 }}
-          >
+        <h2 className="text-3xl font-bold text-center text-[#132d4c] mb-12">Our Projects</h2>
+
+        <div className="bg-white rounded-xl shadow-xl overflow-hidden">
+          {/* Top Section - Image Carousel */}
+          <div className="relative w-full h-[400px] md:h-[500px] bg-gray-100">
             {project.images.map((image, index) => (
-              <div
+              <motion.div
                 key={index}
-                className={`absolute inset-0 transition-opacity duration-500 ${
+                className={`absolute inset-0 transition-opacity duration-700 ${
                   index === currentImage ? "opacity-100" : "opacity-0"
                 }`}
+                initial={{ opacity: 0, scale: 1.05 }}
+                animate={index === currentImage ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 1.05 }}
+                transition={{ duration: 0.7 }}
               >
                 <Image
                   src={image || "/placeholder.svg"}
                   alt={`${project.title} - Image ${index + 1}`}
                   fill
                   className="object-contain"
+                  priority={index === currentImage}
                 />
-              </div>
+              </motion.div>
             ))}
 
-            {/* Image Navigation */}
-            <button
-              onClick={prevImage}
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/10 hover:bg-black/30 text-white p-1 rounded-full z-10 opacity-50"
-              aria-label="Previous image"
-            >
-              <ChevronLeft className="h-4 w-4" />
-            </button>
-            <button
-              onClick={nextImage}
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/10 hover:bg-black/30 text-white p-1 rounded-full z-10 opacity-50"
-              aria-label="Next image"
-            >
-              <ChevronRight className="h-4 w-4" />
-            </button>
-
-            {/* Image Dots */}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
-              {project.images.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentImage(index)}
-                  className={`w-2 h-2 rounded-full ${index === currentImage ? "bg-white" : "bg-white/50"}`}
-                  aria-label={`Go to image ${index + 1}`}
-                />
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Right Details */}
-          <motion.div
-            className="w-full md:w-1/2 bg-gray-50 p-6 md:p-8 rounded-r-lg shadow-lg min-h-[500px] flex flex-col justify-between"
-            initial={{ opacity: 0, x: 30 }}
-            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <div>
-              <div className="mb-4 inline-block px-3 py-1 bg-[#00aee7] text-white text-sm rounded-full">
+            {/* Category Badge */}
+            <div className="absolute top-4 left-4 z-10">
+              <span className="px-4 py-2 bg-[#00aee7] text-white text-sm font-medium rounded-full">
                 {project.category}
-              </div>
-              <h3 className="text-xl md:text-2xl font-bold text-[#132d4c] mb-4">{project.title}</h3>
-              <p className="text-gray-700 mb-6">{project.description}</p>
+              </span>
+            </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <p className="text-sm font-semibold text-[#132d4c]">Client:</p>
-                  <p className="text-gray-700">{project.client}</p>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-[#132d4c]">Project Value:</p>
-                  <p className="text-gray-700">{project.amount}</p>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-[#132d4c]">Year:</p>
-                  <p className="text-gray-700">{project.year}</p>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-[#132d4c]">Location:</p>
-                  <p className="text-gray-700">{project.area}</p>
-                </div>
+            {/* Image Navigation */}
+            <div className="absolute inset-x-0 bottom-0 flex justify-between items-center p-4 bg-gradient-to-t from-black/50 to-transparent">
+              <div className="flex space-x-2">
+                {project.images.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImage(index)}
+                    className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                      index === currentImage ? "bg-white scale-125" : "bg-white/50"
+                    }`}
+                    aria-label={`Go to image ${index + 1}`}
+                  />
+                ))}
+              </div>
+
+              <div className="flex space-x-2">
+                <button
+                  onClick={prevImage}
+                  className="bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors"
+                  aria-label="Previous image"
+                >
+                  <ChevronLeft className="h-5 w-5" />
+                </button>
+                <button
+                  onClick={nextImage}
+                  className="bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors"
+                  aria-label="Next image"
+                >
+                  <ChevronRight className="h-5 w-5" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Section - Project Details */}
+          <div className="p-6 md:p-8 bg-white">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+              {/* Left Column - Title and Description */}
+              <div className="md:w-1/2">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#132d4c] mb-4">{project.title}</h3>
+                <p className="text-gray-700 mb-6 text-lg">{project.description}</p>
+
                 {project.id === 16 && (
-                  <div className="col-span-2">
-                    <p className="text-sm font-semibold text-[#132d4c]">Project Details:</p>
-                    <ul className="text-gray-700 list-disc pl-5 mt-2">
+                  <div className="mt-4 bg-gray-50 p-4 rounded-lg">
+                    <p className="font-semibold text-[#132d4c] mb-2">Project Details:</p>
+                    <ul className="text-gray-700 list-disc pl-5 space-y-1">
                       <li>Individual Villa Interior in Noida - ₹34,00,000/- (Turnkey)</li>
                       <li>Individual Villa Structure & Interior in Delhi - ₹2,34,00,000/- (Turnkey)</li>
                       <li>Individual Villa Structure & Interior in Delhi - ₹2,60,39,200/- (Turnkey)</li>
                     </ul>
                   </div>
                 )}
-                {/* <div className="col-span-2">
-                  <p className="text-sm font-semibold text-[#132d4c]">Client Contact:</p>
-                  <p className="text-gray-700">{project.contactPerson}</p>
+              </div>
+
+              {/* Right Column - Project Details */}
+              <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="flex items-start space-x-3">
+                  <Building className="h-5 w-5 text-[#00aee7] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#132d4c]">Client</p>
+                    <p className="text-gray-700">{project.client}</p>
+                  </div>
                 </div>
-                <div className="col-span-2">
-                  <p className="text-sm font-semibold text-[#132d4c]">Contractor Contact:</p>
-                  <p className="text-gray-700">{project.contractorPerson}</p>
-                </div> */}
+
+                <div className="flex items-start space-x-3">
+                  <DollarSign className="h-5 w-5 text-[#00aee7] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#132d4c]">Project Value</p>
+                    <p className="text-gray-700">{project.amount}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <Calendar className="h-5 w-5 text-[#00aee7] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#132d4c]">Year</p>
+                    <p className="text-gray-700">{project.year}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <MapPin className="h-5 w-5 text-[#00aee7] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#132d4c]">Location</p>
+                    <p className="text-gray-700">{project.area}</p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Navigation Buttons */}
-            <div className="flex justify-between pt-6 mt-4">
+            {/* Project Navigation */}
+            <div className="flex justify-between items-center mt-8 pt-6 border-t border-gray-100">
               <button
                 onClick={prevProject}
-                className="flex items-center text-[#132d4c] hover:text-[#00aee7] transition-colors"
+                className="flex items-center text-[#132d4c] hover:text-[#00aee7] transition-colors group"
               >
-                <ChevronLeft className="h-5 w-5 mr-1" />
-                Previous Project
+                <ChevronLeft className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" />
+                <span>Previous Project</span>
               </button>
+
+              <div className="hidden md:flex items-center space-x-1">
+                {projects.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => {
+                      setCurrentProject(index)
+                      setCurrentImage(0)
+                    }}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      index === currentProject ? "bg-[#00aee7] scale-125" : "bg-gray-300"
+                    }`}
+                    aria-label={`Go to project ${index + 1}`}
+                  />
+                ))}
+              </div>
+
               <button
                 onClick={nextProject}
-                className="flex items-center text-[#132d4c] hover:text-[#00aee7] transition-colors"
+                className="flex items-center text-[#132d4c] hover:text-[#00aee7] transition-colors group"
               >
-                Next Project
-                <ChevronRight className="h-5 w-5 ml-1" />
+                <span>Next Project</span>
+                <ChevronRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
-          </motion.div>
+          </div>
         </div>
 
-        {/* Project Dots */}
-        <div className="flex justify-center mt-8 space-x-2 flex-wrap">
-          {projects.map((proj, index) => (
+        {/* Mobile Project Indicators */}
+        <div className="flex justify-center mt-8 space-x-1 md:hidden flex-wrap">
+          {projects.map((_, index) => (
             <button
-              key={proj.id}
+              key={index}
               onClick={() => {
                 setCurrentProject(index)
                 setCurrentImage(0)
               }}
-              className={`w-3 h-3 rounded-full m-1 ${
-                index === currentProject ? "bg-[#00aee7]" : "bg-gray-300"
-              } focus:outline-none`}
+              className={`w-2.5 h-2.5 rounded-full m-1 transition-all duration-300 ${
+                index === currentProject ? "bg-[#00aee7] scale-125" : "bg-gray-300"
+              }`}
               aria-label={`Go to project ${index + 1}`}
-              title={proj.title}
             />
           ))}
         </div>
