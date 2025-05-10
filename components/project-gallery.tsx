@@ -57,7 +57,7 @@ const ProjectGallery = () => {
           PROJECT GALLERY
         </motion.h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {projectImages.map((image, index) => (
             <motion.div
               key={index}
