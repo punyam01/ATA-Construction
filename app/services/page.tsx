@@ -113,7 +113,7 @@ export default function ServicesPage() {
           {/* Title */}
           <motion.div variants={itemVariants} className="text-center mb-16">
 {/*             <h2 className="text-3xl font-bold text-[#132d4c]">Our Services</h2> */}
-            <div className="w-20 h-1 bg-[#00aee7] mx-auto my-4"></div>
+{/*             <div className="w-20 h-1 bg-[#00aee7] mx-auto my-4"></div> */}
           </motion.div>
 
           {/* Main Services */}
