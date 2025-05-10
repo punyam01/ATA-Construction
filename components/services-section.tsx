@@ -105,7 +105,7 @@ const ServicesSection = () => {
         </div>
 
         {/* View All Services button */}
-        <div className="text-center mt-12 sm:mt-16">
+        <div className="pt-4 text-center mt-3 sm:mt-3">
           <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
             <Link href="/services">
               <Button size="lg" className="bg-[#00aee7] hover:bg-[#132d4c] text-white px-8 py-6 h-auto text-lg">
