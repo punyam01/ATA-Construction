@@ -18,7 +18,7 @@ const mainServices = [
     title: "Internal Finishing.",
     description:
       "Our finishing services ensure high-quality interior and exterior aesthetics for all types of buildings. We specialize in wall finishes, flooring, ceiling work, painting, and exterior cladding to enhance the appearance and durability of your property.",
-    image: "/images/serv2.webp",
+    image: "/images/Taj Resort_04.png",
   },
   {
     id: "external-development",
