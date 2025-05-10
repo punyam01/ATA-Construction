@@ -17,7 +17,7 @@ const homeServices = [
     title: "Internal Finishing",
     description:
       "Our finishing services ensure high-quality interior and exterior aesthetics for all types of buildings.",
-    image: "/images/Taj Resort_04.png",
+    image: "/images/Taj Resort _04.png",
   },
  {
     id: "external-development",
