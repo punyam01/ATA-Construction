@@ -105,19 +105,12 @@ export default function ServicesPage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="perspective-1000"
     >
       {/* Services Section */}
-      <motion.section className="py-20" variants={containerVariants} initial="hidden" animate="visible">
+      <motion.section className="pt-4 pb-12" variants={containerVariants} initial="hidden" animate="visible">
         <div className="container mx-auto px-4">
-          {/* Title */}
-          <motion.div variants={itemVariants} className="text-center mb-16">
-{/*             <h2 className="text-3xl font-bold text-[#132d4c]">Our Services</h2> */}
-{/*             <div className="w-20 h-1 bg-[#00aee7] mx-auto my-4"></div> */}
-          </motion.div>
-
           {/* Main Services */}
-          <div className="bg-gray-50 py-10 px-6 rounded-lg mb-12">
+          <div className="bg-gray-50 p-6 rounded-lg mb-12">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {mainServices.map((service) => (
                 <motion.div
@@ -161,12 +154,12 @@ export default function ServicesPage() {
           </div>
 
           {/* Specialized Services */}
-          <motion.div variants={itemVariants} className="text-center mb-16">
+          <motion.div variants={itemVariants} className="text-center mb-8">
             <h2 className="text-3xl font-bold text-[#132d4c]">SPECIALIZED CORPORATE SERVICES:</h2>
             <div className="w-20 h-1 bg-[#00aee7] mx-auto my-4"></div>
           </motion.div>
 
-          <div className="bg-gray-50 py-10 px-6 rounded-lg">
+          <div className="bg-gray-50 p-6 rounded-lg">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {specializedServices.map((service) => (
                 <motion.div
@@ -213,15 +206,15 @@ export default function ServicesPage() {
 
       {/* CTA Section */}
       <motion.section
-        className="py-16 bg-[#132d4c]"
+        className="py-12 bg-[#132d4c]"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Need Our Services?</h2>
-          <p className="text-white text-lg mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-white mb-4">Need Our Services?</h2>
+          <p className="text-white text-lg mb-6 max-w-2xl mx-auto">
             Contact us today to discuss your requirements and get a free quote. Our team is ready to assist you.
           </p>
           <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
