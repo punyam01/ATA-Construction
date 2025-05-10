@@ -293,7 +293,7 @@ const ProjectsSection = () => {
   if (!project) return null
 
   return (
-    <section ref={ref} className="py-16 bg-white">
+    <section ref={ref} className="pt-19 pb-16 bg-white">
       <div className="container mx-auto px-4">
 {/*         <h2 className="text-3xl font-bold text-center text-[#132d4c] mb-12">Our Projects</h2> */}
 
