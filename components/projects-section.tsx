@@ -38,7 +38,7 @@ const ProjectsSection = () => {
         "Internal Finishing, Boundary wall, Road Works, MS works, External Development at Choloris-Faridabad and Aura-Gurugram",
       images: [
         "/images/Mahindra_01.png",
-        "/images/Mahindra_02.png",
+        "/images/mahindra_02.png",
         "/images/5.3.png",
         "/images/5.2.png",
         "/images/5.1.png",
