@@ -13,10 +13,10 @@ const portfolioItems = [
     images: ["/images/civilcons2.png", "/images/civilcons1.jpg", "/images/civilcons3.jpg", "/images/civilcons4.jpeg", "/images/civilcons5.jpeg", "/images/civilcons6.jpeg"],
   },
   {
-    category: "INTERNAL FINISHING",
+    category: "INTERNAL & EXTERNAL FINISHING",
     description:
       "Our finishing services ensure high-quality interior and exterior aesthetics for all types of buildings.",
-    images: ["/images/interior4.jpg", "/images/interior5.JPG", "/images/interior3.jpg", "/images/interior6.jpeg", "/images/inerior7.jpeg", "/images/interior8.jpeg"],
+    images: ["/images/interior4.jpg", "/images/interior5.jpg", "/images/interior3.jpg", "/images/interior6.jpeg", "/images/inerior7.jpeg", "/images/interior8.jpeg"],
   },
   {
     category: "EXTERNAL DEVELOPMENT",
@@ -39,12 +39,12 @@ const portfolioItems = [
   {
     category: "TURNKEY PROJECTS",
     description: "We offer end-to-end project management and execution for turnkey construction projects.",
-    images: ["/images/tur1.jpg", "/images/tur3.jpg", "/images/tur2.jpg", "/images/turn4.jpeg", "/images/turn5.jpeg", "/images/serv7.jpg"],
+    images: ["/images/tur1.jpg", "/images/tur3.jpg", "/images/tur2.jpg", "/images/turn4.jpeg", "/images/turn5.jpeg", "/images/tur6.jpeg"],
   },
   {
     category: "PLUMBING & FIREFIGHTING WORKS",
     description: "Our specialized team handles all plumbing and firefighting system installations with expertise.",
-    images: ["/images/plum4.jpg", "/images/plum3.JPG", "/images/plum2.jpg", "/images/plum5.jpeg", "/images/plum6.jpeg", "/images/serv8.webp"],
+    images: ["/images/plum4.jpg", "/images/plum3.jpg", "/images/plum2.jpg", "/images/plum5.jpeg", "/images/plum6.jpeg", "/images/plum7.jpeg"],
   },
 ]
 
@@ -77,29 +77,17 @@ export default function PortfolioPage() {
   }
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      <section className="py-16">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+      <section className="pt-6 pb-8">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-{/*             <h2 className="text-3xl font-bold text-[#132d4c] mb-4 font-['Poppins']">Our Work</h2>
-            <div className="w-24 h-1 bg-[#00aee7] mx-auto mb-6"></div>
-            <p className="text-gray-700 max-w-3xl mx-auto font-['Roboto']">
-              Explore our portfolio showcasing our expertise across various construction and renovation projects.
-            </p> */}
-          </div>
-
-          <div className="space-y-20">
+          <div className="space-y-10">
             {portfolioItems.map((item) => (
-              <div key={item.category} className="mb-16">
-                <h3 className="text-2xl font-bold text-[#132d4c] mb-4">{item.category}</h3>
-                <p className="text-gray-700 mb-8 max-w-3xl">{item.description}</p>
+              <div key={item.category}>
+                <h3 className="text-xl md:text-2xl font-bold text-[#132d4c] mb-2">{item.category}</h3>
+                <p className="text-gray-700 mb-4 max-w-3xl">{item.description}</p>
 
-                <div className="mx-4 md:mx-16">
-                  <div className="relative rounded-lg overflow-hidden shadow-lg">
+                <div className="mx-2 md:mx-8">
+                  <div className="relative rounded-lg overflow-hidden shadow-md">
                     <div className="relative aspect-video">
                       {item.images.map((image, index) => (
                         <div
@@ -136,14 +124,14 @@ export default function PortfolioPage() {
                     </button>
 
                     {/* Indicators */}
-                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
+                    <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
                       {item.images.map((_, index) => (
                         <button
                           key={index}
                           onClick={() =>
                             setCurrentSlides((prev) => ({ ...prev, [item.category]: index }))
                           }
-                          className={`w-3 h-3 rounded-full ${
+                          className={`w-2.5 h-2.5 rounded-full ${
                             index === currentSlides[item.category] ? "bg-white" : "bg-white/50"
                           }`}
                           aria-label={`Go to image ${index + 1}`}
