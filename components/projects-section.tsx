@@ -295,7 +295,7 @@ const ProjectsSection = () => {
   return (
     <section ref={ref} className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-[#132d4c] mb-12">Our Projects</h2>
+{/*         <h2 className="text-3xl font-bold text-center text-[#132d4c] mb-12">Our Projects</h2> */}
 
         <div className="bg-white rounded-xl shadow-xl overflow-hidden">
           {/* Top Section - Image Carousel */}
@@ -399,13 +399,13 @@ const ProjectsSection = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-3">
+{/*                 <div className="flex items-start space-x-3">
                   <Calendar className="h-5 w-5 text-[#00aee7] mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm font-semibold text-[#132d4c]">Year</p>
                     <p className="text-gray-700">{project.year}</p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-[#00aee7] mt-0.5 flex-shrink-0" />
