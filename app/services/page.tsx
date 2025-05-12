@@ -11,7 +11,7 @@ const mainServices = [
     title: "Civil & Structural Construction.",
     description:
       "We provide comprehensive civil and structural construction services for residential, commercial, and industrial projects. Our team of experienced engineers and workers ensures high-quality construction that meets all safety standards and client requirements.",
-    image: "/images/serv1.jpg",
+    image: "/images/civilcons3.jpg",
   },
   {
     id: "internal-external",
