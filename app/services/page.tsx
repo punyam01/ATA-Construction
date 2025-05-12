@@ -56,14 +56,14 @@ const specializedServices = [
     title: "Turnkey Projects",
     description:
       "We offer end-to-end project management and execution for turnkey construction projects. From initial design to final handover, we handle all aspects of the construction process, providing a hassle-free experience for our clients.",
-    image: "/images/tur1.jpg",
+    image: "/images/Tata_02.png",
   },
   {
     id: "plumbing-firefighting",
     title: "Plumbing & Firefighting Works",
     description:
       "Our specialized team handles all plumbing and firefighting system installations with expertise. We ensure reliable water supply, efficient drainage, and comprehensive fire safety systems that comply with all relevant regulations and standards.",
-    image: "/images/serv8.webp",
+    image: "/images/Taj Resort_03.png",
   },
 ]
 
