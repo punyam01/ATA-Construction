@@ -25,7 +25,7 @@ const mainServices = [
     title: "External Development.",
     description:
       "We offer complete external development solutions including landscaping, drainage systems, and site improvements. Our services help create functional and attractive outdoor spaces that complement your building and enhance its value.",
-    image: "/images/serv3.webp",
+    image: "/images/ext1.jpg",
   },
   {
     id: "Electrical-works",
