@@ -10,7 +10,7 @@ const homeServices = [
     title: "Civil & Structural Construction",
     description:
       "We provide comprehensive civil and structural construction services for residential, commercial, and industrial projects.",
-    image: "/images/serv1.jpg",
+    image: "/images/civilcons3.jpg",
   },
   {
     id: "interior-exterior",
