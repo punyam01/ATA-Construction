@@ -24,7 +24,7 @@ const homeServices = [
     title: "External Development",
     description:
       "We offer complete external development solutions including landscaping, drainage systems, and site improvements.",
-    image: "/images/serv3.webp",
+    image: "/images/ext1.jpg",
   },
 ]
 
