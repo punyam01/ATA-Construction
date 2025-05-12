@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { useInView } from "react-intersection-observer"
-import { ChevronLeft, ChevronRight, Calendar, MapPin, Building, DollarSign } from "lucide-react"
+import { ChevronLeft, ChevronRight, Calendar, MapPin, Building, IndianRupeeIcon } from "lucide-react"
 
 const ProjectsSection = () => {
   const [currentProject, setCurrentProject] = useState(0)
@@ -392,7 +392,7 @@ const ProjectsSection = () => {
                 </div>
 
                 <div className="flex items-start space-x-3">
-                  <DollarSign className="h-5 w-5 text-[#00aee7] mt-0.5 flex-shrink-0" />
+                  <IndianRupeeIcon className="h-5 w-5 text-[#00aee7] mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-sm font-semibold text-[#132d4c]">Project Value</p>
                     <p className="text-gray-700">{project.amount}</p>
