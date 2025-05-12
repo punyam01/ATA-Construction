@@ -49,7 +49,7 @@ const specializedServices = [
     title: "Interior Works",
     description:
       "Our interior services include custom cabinetry, shelving, and woodwork to enhance the functionality and aesthetics of your living spaces. We create beautiful and practical interiors tailored to your specific needs and preferences.",
-    image: "/images/School_02.png",
+    image: "/images/School_03.png",
   },
   {
     id: "turnkey-projects",
