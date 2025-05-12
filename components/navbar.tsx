@@ -67,7 +67,7 @@ const Navbar = () => {
             className="flex items-center text-sm hover:text-[#00aee7] transition-colors"
           >
             <Mail className="h-4 w-4 mr-1" />
-            constructionsata@gmail.com
+            info@ataconstructions.com
           </a>
         </div>
       </div>
