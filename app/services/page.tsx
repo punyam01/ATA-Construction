@@ -42,21 +42,21 @@ const specializedServices = [
     title: "Civil Construction",
     description:
       "Our civil construction services cover everything from foundation work to structural framing and concrete pouring. We handle projects of all sizes with precision and attention to detail, ensuring structural integrity and longevity.",
-    image: "/images/serv5.jpg",
+    image: "/images/civilcons2.png",
   },
   {
     id: "interior-works",
     title: "Interior Works",
     description:
       "Our interior services include custom cabinetry, shelving, and woodwork to enhance the functionality and aesthetics of your living spaces. We create beautiful and practical interiors tailored to your specific needs and preferences.",
-    image: "/images/serv6.jpg",
+    image: "/images/School_02.png",
   },
   {
     id: "turnkey-projects",
     title: "Turnkey Projects",
     description:
       "We offer end-to-end project management and execution for turnkey construction projects. From initial design to final handover, we handle all aspects of the construction process, providing a hassle-free experience for our clients.",
-    image: "/images/serv7.jpg",
+    image: "/images/tur1.jpg",
   },
   {
     id: "plumbing-firefighting",
