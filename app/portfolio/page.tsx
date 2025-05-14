@@ -39,12 +39,12 @@ const portfolioItems = [
   {
     category: "TURNKEY PROJECTS",
     description: "We offer end-to-end project management and execution for turnkey construction projects.",
-    images: ["/images/tur1.jpg", "/images/tur3.jpg", "/images/tur2.jpg", "/images/turn4.jpeg", "/images/turn5.jpeg", "/images/tur6.jpeg"],
+    images: ["/images/tur1.jpg", "/images/tur3.jpg", "/images/tur2.jpg", "/images/turn4.jpeg", "/images/turn5.jpeg", "/images/serv7.jpg"],
   },
   {
     category: "PLUMBING & FIREFIGHTING WORKS",
     description: "Our specialized team handles all plumbing and firefighting system installations with expertise.",
-    images: ["/images/plum4.jpg", "/images/plum3.jpg", "/images/plum2.jpg", "/images/plum5.jpeg", "/images/plum6.jpeg", "/images/plum7.jpeg"],
+    images: ["/images/plum4.jpg", "/images/plum3.JPG", "/images/plum2.jpg", "/images/plum5.jpeg", "/images/plum6.jpeg", "/images/plum7.jpeg"],
   },
 ]
 
