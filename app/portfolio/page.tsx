@@ -13,10 +13,10 @@ const portfolioItems = [
     images: ["/images/civilcons2.png", "/images/civilcons1.jpg", "/images/civilcons3.jpg", "/images/civilcons4.jpeg", "/images/civilcons5.jpeg", "/images/civilcons6.jpeg"],
   },
   {
-    category: "INTERNAL & EXTERNAL FINISHING",
+    category: "INTERNAL FINISHING",
     description:
       "Our finishing services ensure high-quality interior and exterior aesthetics for all types of buildings.",
-    images: ["/images/interior4.jpg", "/images/interior5.jpg", "/images/interior3.jpg", "/images/interior6.jpeg", "/images/inerior7.jpeg", "/images/interior8.jpeg"],
+    images: ["/images/interior4.jpg", "/images/interior5.JPG", "/images/interior3.jpg", "/images/interior6.jpeg", "/images/inerior7.jpeg", "/images/interior8.jpeg"],
   },
   {
     category: "EXTERNAL DEVELOPMENT",
