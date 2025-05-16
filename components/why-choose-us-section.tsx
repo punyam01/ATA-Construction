@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import {
   Hammer,
   Users,
-  DollarSign,
+  IndianRupeeIcon,
   ShieldCheck,
   Smile,
   Clock,
@@ -48,7 +48,7 @@ const reasons = [
 const iconMap: Record<string, React.ElementType> = {
   "Quality Material": Hammer,
   "Expert Team": Users,
-  "Reasonable Cost": DollarSign,
+  "Reasonable Cost": IndianRupeeIcon,
   "Secure & Safe": ShieldCheck,
   "Customer Satisfaction": Smile,
   "Timely Delivery": Clock,
