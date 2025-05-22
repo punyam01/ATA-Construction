@@ -263,7 +263,7 @@ const ProjectsSection = () => {
       id: 13,
       title: "INDIVIDUAL PROJECTS",
       description: "Multiple Individual Villa Projects in Delhi and Noida",
-      images: ["/images/service4.jpg", "/images/service5.jpg", "/images/6.3.png"],
+      images: ["/images/ind1.jpeg", "/images/ind2.jpeg", "/images/ind3.jpeg", "/images/ind4.jpeg", "/images/ind5.jpeg"],
       category: "Turnkey",
       client: "INDIVIDUAL",
       amount: "₹34,00,000/- | ₹2,34,00,000/- | ₹2,60,39,200/-",
