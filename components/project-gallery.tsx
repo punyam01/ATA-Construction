@@ -15,7 +15,7 @@ const projectImages = [
   "/images/Tata_01.png",
   "/images/Tata_02.png",
   "/images/gal4.jpeg",
-  "/images/Taj Resort_01.jpeg",
+  "/images/Taj Resort_01.png",
   "/images/gal6.jpeg",
   "/images/gal7.jpeg",
   "/images/gal8.jpeg",
