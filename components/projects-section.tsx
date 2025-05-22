@@ -13,7 +13,7 @@ const ProjectsSection = () => {
 
   const projects = [
      {
-      id: 3,
+      id: 1,
       title: "TATA HOUSING - GURGAON GATEWAY",
       description: "External Paint SKK Project at Gurgaon Gateway",
       images: ["/images/1.3.jpg", "/images/Tata_01.png", "/images/Tata_02.png", "/images/1.1.bmp", "/images/1.2.bmp"],
@@ -26,7 +26,7 @@ const ProjectsSection = () => {
       area: "Gurgaon",
     },
      {
-      id: 5,
+      id: 2,
       title: "HERITAGE INTERNATIONAL SCHOOL",
       description: "Interior Finishing work at Heritage International school",
       images: [
@@ -45,7 +45,7 @@ const ProjectsSection = () => {
       area: "Gurgaon",
     },
     {
-      id: 2,
+      id: 3,
       title: "MAHINDRA LIFESPACE & DEVELOPERS LTD",
       description:
         "Internal Finishing, Boundary wall, Road Works, MS works, External Development at Choloris-Faridabad and Aura-Gurugram",
@@ -65,7 +65,7 @@ const ProjectsSection = () => {
       area: "Gurgaon",
     },
      {
-      id: 10,
+      id: 4,
       title: "CONSCIENT",
       description: "Structure, Civil and Interior Works at Heritage One sec102",
       images: ["/images/service3.jpg", "/images/service4.jpg", "/images/service5.jpg"],
@@ -79,7 +79,7 @@ const ProjectsSection = () => {
     },
 
     {
-      id: 11,
+      id: 5,
       title: "BRIJWASI GROUP",
       description: "Structure, Civil and Interior work of Staff Quarter",
       images: ["/images/service2.jpg", "/images/service3.jpg", "/images/service4.jpg"],
@@ -93,7 +93,7 @@ const ProjectsSection = () => {
     },
     
     {
-      id: 7,
+      id: 6,
       title: "EAGLE INTERNATIONAL LIMITED",
       description: "Constructions of Structure, Civil & Interior Works at A-11, Nizamuddun West",
       images: ["/images/2.1.jpg", "/images/2.2.png", "/images/2.3.jpg"],
@@ -106,7 +106,7 @@ const ProjectsSection = () => {
       area: "Delhi",
     },
     {
-      id: 1,
+      id: 7,
       title: "PARAS BUILDTECH - TIERA, SEC-137",
       description: "Construction of Balance Structure, civil & Internal Finishing of 28 units of LR-1&2",
       images: [
@@ -158,7 +158,7 @@ const ProjectsSection = () => {
     //   area: "Gurgaon",
     // },
     {
-      id: 4,
+      id: 8,
       title: "TAJ RESORT RISHIKESH",
       description: "External Development Project at Taj Resort",
       images: [
@@ -196,7 +196,7 @@ const ProjectsSection = () => {
     //   area: "Gurgaon",
     // },
     {
-      id: 6,
+      id: 9,
       title: "UMANG REALTECH PVT LTD - WINTER HILLS",
       description: "Interior Finishing Project at Winter Hills, Dwarka Mode",
       images: ["/images/4.1.png", "/images/Umang_02.png", "/images/Umang_04.png", "/images/4.2.png", "/images/4.3.png"],
@@ -222,7 +222,7 @@ const ProjectsSection = () => {
     //   area: "Delhi",
     // },
     {
-      id: 8,
+      id: 10,
       title: "STARWIRE INDIA LTD",
       description: "Structure, Civil and Interior Works",
       images: ["/images/service5.jpg", "/images/6.1.png", "/images/6.2.png"],
@@ -235,7 +235,7 @@ const ProjectsSection = () => {
       area: "Delhi",
     },
     {
-      id: 9,
+      id: 11,
       title: "TAJ VIVANTA SURAJKUND",
       description: "Interior, Fire Fighting and Electrical Works",
       images: [
